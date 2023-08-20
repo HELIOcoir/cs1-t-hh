@@ -1,150 +1,690 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<head lang="en">
-	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	<title>Hostiko HTML5 Website Template</title>
-	<!-- Framework CSS -->
-	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
-	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
-	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
-	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
-	<style type="text/css" media="screen">
-		p, table, hr, .box { margin-bottom:25px; }
-		.box p { margin-bottom:10px; }
-	</style>
-</head>
+<html dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>راهنمای قالب هاستیکو ( نسخه WHMCS و HTML )</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400&display=swap" rel="stylesheet">
+<style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+	font-family: 'Vazirmatn', sans-serif;
+}
 
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
 
-<body>
-	<div class="container">
-		<h3 class="center alt">&ldquo;Hostiko HTML5 Website Template&rdquo; Documentation by &ldquo;Designing Media Team&rdquo;</h3>
-		<hr>
-		<h1 class="center">&ldquo;Hostiko HTML5 Website Template&rdquo;</h1>
-		
-		<div class="borderTop">
-			<div class="span-6 colborder info prepend-1">
-				<p class="prepend-top">
-					<strong>
-					Created: 1 May, 2018<br>
-					By: DesigningMedia.com<br>					
-                         Support: <a href="//designingmedia.com/support">www.designingmedia.com/support</a>
-                         <br>
-                    Email: <a href="mailto:hello@designingmedia.com">hello@designingmedia.com</a><br>
-					</strong>
-			      <strong>Twitter: <a href="//twitter.com/mediadesigning">twitter.com/mediadesigning</a> </strong>
-                </p>
-			</div><!-- end div .span-6 -->		
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
 	
-			<div class="span-12 last">
-				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to post your questions on my support forum at <a href="http://designingmedia.com/support">http://designingmedia.com/support</a>. Thanks so much!</p>
-			</div>
-		</div><!-- end div .borderTop -->
-		<hr>
-		<h2 id="toc" class="alt"><img src="assets/images/01_screenshot.jpg" width="400" align="right"></h2>
-      
-		<h2 class="alt">Table of Contents</h2>
-            <ol class="alpha">
-                <li><a href="#Introduction">Introduction</a></li>
-                <li><a href="#jquery">How to Edit jQuery Files?</a></li>
-                <li><a href="#html">How to Edit HTML Files?</a></li>
-                <li><a href="#css">How to Edit CSS Files?</a></li>
-                <li><a href="#contact">How to use Contact Form?</a></li>
-                <li><a href="#colorschemes">How to use Color Schemes?</a></li>
-                <li><a href="#loadingeffect">How to use Banner Slider?</a></li>
-                <li><a href="#credits">Credits & Sources</a></li>
-                <li><a href="#version">Version History</a></li>
-			</ol>
-		<hr>
-		
-		<h3 id="Introduction"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
-			<p>The Hostiko HTML5 website template is a custom design parallax effect yet powerful solution for displaying artwork. The Hostiko HTML5 template features a fully responsive framework that looks fantastic on any mobile device and retina display ready for high-quality resolution graphics.</p>
-            
-            <p>It contains custom portfolio layouts and custom blog template layout options (timeline style) and 40+ valid HTML5 page templates. The Hostiko template features the coded with Bootstrap v3.3.7, HTML5 & CSS3 and unlimited color schemes. It’s compatible with all modern browsers and search engine friendly. So showcase your artworks and blogging posts with this awesome template!</p>
-                
-		<hr>
-
-		<h3 id="jquery"><strong>B) How to Edit jQuery Files?</strong> - <a href="#toc">top</a></h3>            
-            <p>We used some great jQuery plugins for this template. All our plugins has been added from <strong>custom.js</strong> and single page templates file from template folder. If you want to edit some single pages or just you want to edit custom.js please open it a text editor like Dreamweaver, Notepad or Notepad++ and edit any lines what you want.</p>
-                
-		<hr>
-        
-		<h3 id="html"><strong>C) How to Edit HTML Files?</strong> - <a href="#toc">top</a></h3>            
-            <p>We have included 40+ custom HTML templates like homepage styles, portfolio styles, blog styles etc. Please open any HTML files with a text editor like Dreamweaver, Notepad or Notepad++ and edit any lines what you want.</p>
-                
-		<hr>
-
-		<h3 id="css"><strong>D) How to Edit CSS Files?</strong> - <a href="#toc">top</a></h3>            
-            <p>We have included some custom CSS styles like  <strong>custom-style.css</strong> (default). Please open any CSS files with a text editor like Dreamweaver, Notepad or Notepad++ and edit any lines what you want. For example if you want to edit your banner images open <strong>custom-style.css</strong> and look at "<strong>.banner-con</strong>" for banner image and change your styles.</p>
-                
-		<hr>
-
-		<h3 id="contact"><strong>E) How to use Contact Form?</strong> - <a href="#toc">top</a></h3>            
-            <p>We used a ajax contact form for this template. Please open <strong>contact-form.php</strong> and edit line: <strong>10</strong> add your email address goes here.</p>
-        <hr>
-
-		<h3 id="googlemap">&nbsp;</h3>
-		<h3><strong>F) </strong><strong> How to use Color Schemes?</strong> - <a href="#toc">top</a></h3>            
-            <p>Please open<strong> style.css</strong> file from <strong>Hostiko/assets/css </strong>folder with a text editor and build your own colors. <strong>#00b2f2</strong> this is our primary color, you can search and replace all to your new color code.</p>
-                
-		<hr>
-
-		<h3 id="loadingeffect">&nbsp;</h3>
-		<h3><strong>G) How to use Banner Slider?</strong> - <a href="#toc">top</a></h3>            
-            <p>We are using Owl-Carousel for banner slider, To modify banner slider script please <a href="http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html">see instruction here</a></p>
-                
-		<hr>
-            
-		<h3 id="credits">&nbsp;</h3>
-		<h3><strong>H) Credits & Sources</strong> - <a href="#toc">top</a></h3>
-			<p>You can find the version history (changelog.txt) file on <strong>Hostiko.zip</strong> folder</p>
-		<hr>
-        
-        <h3>&nbsp;</h3>
-        <h3>jQuery Files</h3>
-        
-        <ul>
-          <li><a href="http://jquery.com/download/">assets/js/jquery.min.js</a></li>
-            <li><a href="http://getbootstrap.com/">assets/js/bootstrap.min.js</a></li>
-            <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/">js/jquery.easing.1.3.js</a></li>
-            <li><a href="http://luis-almeida.github.io/unveil/">js/jquery.unveilEffects.js</a></li>
-            <li><a href="https://github.com/benbarnett/jQuery-Animate-Enhanced">js/jquery.animate-enhanced.min.js</a></li>
-            <li><a href="http://rendro.github.io/easy-pie-chart/">js/jquery.easypiechart.min.js</a></li>
-            <li><a href="https://github.com/ashleydw/lightbox">js/lightbox/lightbox.js</a></li>
-            <li><a href="https://github.com/MikhaelGerbet/jquery-incremental-counter">js/counter/counter.js</a></li>
-            <li><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">js/form-submission/validate.js</a></li>
-            <li><a href="http://designingmedia.com">js/form-submission/contact-form.js</a></li>            
-            <li><a href="https://github.com/ashleydw/lightbox">js/projects/isotope.js</a></li>
-          <li><a href="http://designingmedia.com">js/custom.js</a></li>
-        </ul>
-        
-        <h3>Photos</h3>
-        
-        <ul>
-        	<li><a href="http://shutterstock.com">Shutter Stock</a></li>
-        	<li><a href="http://istockphoto.com">Istock Photo</a></li>
-        </ul>
-         <h3>Icons:</h3>
-        
-        <ul>
-        	<li><a href="http://www.flaticon.com">Flat Icon</a></li>
-        	<li><a href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a></li>
-        </ul>
-        <h3>font:</h3>
-        
-        <ul>
-        	<li><a href="https://www.google.com/fonts/specimen/Montserrat">Montserrat</a></li>
-        </ul>
-        <hr>
-        
-		<h3 id="version">&nbsp;</h3>
-		<h3><strong>I) Version History</strong> - <a href="#toc">top</a></h3>
-			<p>You can find the version history (changelog.txt) file on <strong>Hostiko.zip</strong> folder</p>
-		<hr>
-              
-		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
-		<p class="append-bottom alt large"><strong>Designing Media Team</strong></p>
-		<p><a href="#toc">Go To Table of Contents</a></p>
-		
-		<hr class="space">
-	</div><!-- end div .container -->
-</body>
-</html>
+</style></head><body><article id="0905ab52-42a8-401b-91da-43b45efbeddf" class="page sans"><header><img class="page-cover-image" src="assets/banner_img.jpg" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">📜</span></div><h1 class="page-title">راهنمای قالب هاستیکو ( نسخه WHMCS و HTML )</h1><p class="page-description"></p></header><div class="page-body"><h2 id="9b5b0a22-2727-46e2-a13b-334839142d1b" class=""><a href="https://whmcs1.ir/hostiko">خرید نسخه کامل و فارسی قالب هاستیکو ( Hostiko ) از WHMCS1</a></h2><p id="c40e1a67-6467-42d2-890e-e6543a2fa71e" class="">پشتیبانی محصول از طریق پنل کاربری WHMCS1
+پشتیبانی، تماس: hi@whmcs1.ir
+توییتر: twitter.com/whmcs1
+لینکدین: linkedin.com/whmcs1/</p><h3 id="00374fef-f044-4b4b-b71e-e195bd8e0bd8" class="">ممنون بابت تهیه این قالب 🙂 اگر سوالی دارید از طریق پنل کاربری WHMCS1 مطرح کنید.</h3><h3 id="7413e7e7-d46f-48c2-87f9-59a732d2f688" class="">فهرست</h3><ol type="1" id="62f431ec-1f51-479e-ac27-d888c3fff68a" class="numbered-list" start="1"><li>مقدمه</li></ol><ol type="1" id="dc28ff64-1020-475c-a40f-d1c3b19b7e9e" class="numbered-list" start="2"><li>نحوه ویرایش فایل های jQuery</li></ol><ol type="1" id="93bd0fc8-4f29-451e-ac72-f9471fe1af80" class="numbered-list" start="3"><li>نحوه ویرایش فایل های HTML</li></ol><ol type="1" id="3a25c6f2-1639-4bbc-a530-f36a74fe01e4" class="numbered-list" start="4"><li>نحوه ویرایش فایل های CSS</li></ol><ol type="1" id="360c4f3a-a906-457e-b087-b12a04b1eb44" class="numbered-list" start="5"><li>نحوه استفاده از فرم تماس</li></ol><ol type="1" id="3954635c-59c1-486f-99c2-c61dae01a5aa" class="numbered-list" start="6"><li>نحوه ویرایش رنگ ها</li></ol><ol type="1" id="b6d4560e-4a7f-4c7f-950f-bb030a1169c1" class="numbered-list" start="7"><li>نحوه استفاده از اسلایدر</li></ol><p id="ffefdb9a-7b69-4149-9505-d8fc8dd4f746" class="">
+</p><h1 id="cec98b4d-6baf-467c-970c-0d84fc9715c7" class="">📌 مقدمه</h1><p id="0799b36d-8f84-4a5b-b494-75b3c6b13995" class="">قالب هاستیکو (نسخه HTML) یکی از بهترین و کامل ترین قالب های هاستینگ با دمو های متعدد است.
+در این قالب از با کیفیت ترین تصاویر و گرافیک ها استفاده شده است. این قالب کاملا ریسپانسیو است و دستگاه های مختلف (لپ‌تاپ، تبلت، موبایل) را پشتیبانی می‌کند.</p><h1 id="c2d749de-7ff7-4ba4-8cc1-b32b40cc7c6f" class="">📌 نحوه ویرایش فایل های jQuery</h1><p id="b4899b32-b47c-42f5-aecd-777ef2215e8a" class="">ما از بهترین افزونه های jQuery در این قالب استفاده کرده‌ایم.
+تمام پلاگین ها از طریق <strong>custom.js </strong>اضافه شده‌اند. 
+اگر میخواهید بعضی از صفحات را ویرایش کنید کافیست فایل <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>custom.js </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>را با یک ادیتور مثل <strong><strong><strong><strong><strong><strong><strong>vscode </strong></strong></strong></strong></strong></strong></strong>یا <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>notepad++ </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>باز کنید و هر بخشی را می‌خواهید ویرایش کنید.</p><h1 id="72eedcda-21af-4d30-9779-1ff87ab084d2" class="">📌 نحوه ویرایش فایل های HTML</h1><p id="ba2a8905-6373-4d65-9f7d-83b71cf1270f" class="">در این قالب بیش از ۴۰ دموی HTML متفاوت گنجانده شده است.
+برای ویراش فایل های HTML کافیست فایل HTML مورد نظر را با یک ادیتور مثل vscode یا notepad++ باز کنید و هر بخشی را می‌خواهید ویرایش کنید.</p><h1 id="cfb45403-8614-4ec7-847d-f4be42296004" class="">📌 نحوه ویرایش فایل های CSS</h1><p id="551732e1-d449-44c5-843f-80648bd61b04" class="">فایل های <strong><strong><strong><strong><strong><strong><strong>CSS </strong></strong></strong></strong></strong></strong></strong>سفارشی در فایل <strong>custom-style.css</strong> گنجانده شده‌اند. برای ویرایش فایل های <strong><strong><strong><strong><strong><strong><strong>CSS </strong></strong></strong></strong></strong></strong></strong>کافیست <strong>custom-style.css </strong>را با یک ادیتور نظیر <strong><strong><strong><strong><strong><strong><strong><strong>vscode </strong></strong></strong></strong></strong></strong></strong></strong>یا <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>notepad++ </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>باز کنید و بخش مورد نظر را ویرایش کنید</p><h1 id="aae35b21-8082-4f77-af05-138475141073" class="">📌 نحوه استفاده از فرم تماس</h1><p id="6c650080-61a5-4c74-8b1b-ed10edde9484" class="">ما برای این قالب از فرم تماس Ajax استفاده کرده‌ایم. لطفا فایل contact-form.php را با یک ادیتور باز کنید و در خط ۱۰ ایمیل خودتان را جایگزین کنید.</p><h1 id="e4d8bb4d-9036-48b6-a955-c816e3a28425" class="">📌 نحوه ویرایش رنگ ها</h1><p id="5d121fb4-0696-41ec-b106-26654ab0fbc5" class="">لطفاً فایل <strong>style.css</strong> را از پوشه <strong>Hostiko/assets/css</strong> با یک ویرایشگر متن باز کنید و رنگ های خود را جایگزین کنید. <strong>#00b2f2</strong> این رنگ اصلی ما است، می توانید همه را جستجو کنید و کد رنگ جدید خود را جایگزین کنید</p><h1 id="4267b067-cddd-43a2-8104-a0a106ab5781" class="">📌 نحوه استفاده از اسلایدر</h1><p id="37530bdd-f2b7-41fd-ad92-668524db510f" class="">ما از Owl-Carousel برای اسلایدر استفاده می کنیم، برای تغییر اسکریپت اسلایدر بنر، لطفاً <a href="http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html">دستورالعمل اینجا را ببینید.</a></p><p id="cb16309c-6a54-423f-a5b5-23a56545dbb8" class="">
+</p></div></article></body></html>
