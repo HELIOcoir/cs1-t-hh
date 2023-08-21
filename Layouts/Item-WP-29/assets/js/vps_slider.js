@@ -4,9 +4,9 @@ var ram_arr = new Array('2 GB','4 GB','8 GB','12 GB','16 GB');
 var hdd_arr  = new Array('10 GB','30 GB','50 GB','60 GB','80 GB');
 var bandwidth_arr = new Array('Unlimited','Unlimited','Unlimited','Unlimited','Unlimited');
 var ip_arr = new Array('3 IPs', '5 IPs','7 IPs','9 IPs','Unlimited')
-var price_arr = 	new Array('$15.99','$19.99','$29.99','$49.99','$69.99');
+var price_arr = 	new Array('$150','$286','$300','$350','$400');
 var link_arr = 		new Array('$10','$25','$50','$75','$100','$125');
-var b_url = 'https://www.your-domain.com/?cmd=cart&action=add&id=';
+var b_url = 'https://akdesigner.com/whmcs-templates/cart.php?a=add&pid=';
 
 // This is what you want the default position to be
 var def_pos = 2;
@@ -18,8 +18,8 @@ $(document).ready(function(){
         animate: true,
         min: 1,
         max: 5,
-        paddingMin: 70,
-        paddingMax: 130,
+        paddingMin: 105,
+        paddingMax: 80,
         change: function( event, ui ) {
             $('.slider-container #cpu_val span.value').html(cpu_arr[ui.value-1]);
             $('.slider-container #ram_val span.value').html(ram_arr[ui.value-1]);
@@ -27,7 +27,7 @@ $(document).ready(function(){
             $('.slider-container #bandwidth_val span.value').html(bandwidth_arr[ui.value-1]);
             $('.slider-container #ip_val span.value').html(ip_arr[ui.value-1]);
             $('.slider-container #price_val').html(price_arr[ui.value-1]);
-            $('.slider-container a.buynow-button').attr('href', b_url + link_arr[ui.value-1]);
+            $('.slider-container a.buynow_button').attr('href', b_url + link_arr[ui.value-1]);
             $('.slider-container div.price_rangetxt div#icon-'+(ui.value-1)).addClass("current");
             $('.slider-container #sub-heading-'+(ui.value-1)).addClass("current1");
         }

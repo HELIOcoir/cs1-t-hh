@@ -1,10 +1,10 @@
 <?php
 $name= $_POST['name'];
+$last_name= $_POST['last_name'];
 $email= $_POST['email'];
-$phone= $_POST['tel'];
 $comments=$_POST['comments'];
 
-if(isset($name)  && isset($email) && isset($phone))
+if(isset($name) && isset($last_name) && isset($email) && isset($phone))
 {
 	global $to_email,$vpb_message_body,$headers;
 	$to_email="info@info.com";
@@ -13,7 +13,7 @@ if(isset($name)  && isset($email) && isset($phone))
 	The user whose detail is shown below has sent this message from ".$_SERVER['HTTP_HOST']." dated ".date('d-m-Y').".\n
 	
 	name: ".$name."\n
-	Phone: ".$phone."\n
+	Last Name: ".$last_name."\n
 	Email Address: ".$email."\n
 	Message: ".$comments."\n
 	User Ip:".getHostByName(getHostName())."\n

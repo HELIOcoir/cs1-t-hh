@@ -26,59 +26,84 @@
 <!--Coming Soon-->
 <section class="coming_soon bg_coming_soon container-fluid">
     <div class="inner_coming_soon">
-        <div class="coming_soon_logo">
-            <a href="index.html"><figure><img src="assets/images/logo01.svg" alt=""></figure></a>
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center">
+                <figure class="coming_soon_main_img"><img src="assets/images/coming_soon_main_img.png" alt=""></figure>
+            </div>
+            <div class="col-xl-6 col-lg-6 coming_soon_content_box padding_left_80">
+                <div class="coming_soon_heading margin_bottom_40">
+                    <small>Our website is</small>
+                    <br>
+                    Coming Soon
+                </div>
+                <div class="count counter_outer_box">
+                    <div class="counter_box">
+                        <div class="inner_counter_box">
+                            <div class="countd">
+                                <div id="days" class="counter">00</div>
+                                <div>days</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="counter_box">
+                        <div class="inner_counter_box">
+                        <div class="countd">
+                            <div id="hours" class="counter">00</div>
+                            <div>hours</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="counter_box">
+                        <div class="inner_counter_box">
+                        <div class="countd">
+                            <div id="mins" class="counter">00</div>
+                            <div>minutes</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="counter_box">
+                        <div class="inner_counter_box">
+                        <div class="countd">
+                            <div id="secs" class="counter">00</div>
+                            <div>seconds</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <p>We’re doing our best to
+                    lauch <span>asap</span>
+                </p>
+                <div class="heading_coming_soon_subscribe_email">Subscribe to get notified!</div>
+                <div class="outer_coming_soon_subscribe_email margin_bottom_50">
+                    <input type="text" class="coming_soon_subscribe_email" placeholder="Enter Your Email">
+                    <input type="Submit" value="Subscribe" class="submit_email_subscribe">
+                </div>
+            </div>
         </div>
-        <div class="small_text">Our website is</div>
-        <h1>Coming soon</h1>
-        <div class="count counter_outer_box">
-            <div class="counter_box">
-                <div class="inner_counter_box">
-                    <div class="countd">
-                        <div id="days" class="counter">00</div>
-                        <div>days</div>
-                    </div>
-                </div>
-            </div>
-            <div class="counter_box">
-                <div class="inner_counter_box">
-                    <div class="countd">
-                        <div id="hours" class="counter">00</div>
-                        <div>hours</div>
-                    </div>
-                </div>
-            </div>
-            <div class="counter_box">
-                <div class="inner_counter_box">
-                    <div class="countd">
-                        <div id="mins" class="counter">00</div>
-                        <div>minutes</div>
-                    </div>
-                </div>
-            </div>
-            <div class="counter_box">
-                <div class="inner_counter_box">
-                    <div class="countd">
-                        <div id="secs" class="counter">00</div>
-                        <div>seconds</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="coming_soon_tag_line margin_top_40 margin_bottom_10">We’re Doing our Best to Launch <span class="color_3e7ccc">ASAP</span></div>
-        <p>We're redesigning our website to make it more convenient and safe for you. We'll be <br> back with new features and amazing experiences. See you soon!</p>
-        <div class="subscribe_text">Subscribe to Get Notified!</div>
-        <div class="subscribe_email_box">
-            <input type="text" class="name subscribe_email_field" placeholder="Enter Your Email">
-            <input type="submit" class="subscribe_btn" value="Subscribe">
-        </div>
-        <ul class="coming_soon_social_links">
-            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-        </ul>
     </div>
+    <section class="container-fluid coming_soon_footer">
+        <div class="row">
+            <div class="bg_6115d0 col-xl-6 col-lg-6 padding_top_30 padding_bottom_30">
+                <div class="coming_soon_copyright">Copyright 2019 <a href="#">DesigningMedia</a>. All Rights Reserved</div>
+            </div>
+            <div class="col-xl-6 col-lg-6 bg_6115d0 padding_left_80">
+                <div class="row color_fff padding_top_15">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="coming_soon_contact_us">
+                            Visit Us: 121 King Street, Melbourne <br>
+                            Victoria 3000 Australia
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <ul class="coming_soon_contact_us_list">
+                            <li><strong>Call:</strong> <a href="tel:+1-212-732-46-19">+1-212-732-46-19</a></li>
+                            <li><strong>Email:</strong> <a href="mailto:info@hostiko.com">info@hostiko.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </section>
 <!--Ends Here-->
 <script src="assets/js/jquery-3.3.1.min.js"></script>
@@ -89,7 +114,7 @@
 
 </script>
 <script>
-    var count = new Date("oct 15,2019 00:00:00").getTime();
+    var count = new Date("oct 2,2019 00:00:00").getTime();
     var x = setInterval( function() {
         var now = new Date().getTime();
         var d = count - now;

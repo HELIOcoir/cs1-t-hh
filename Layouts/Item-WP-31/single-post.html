@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     <link rel="stylesheet" href="assets/css/responsive.css" type="text/css"/>
 </head>
-<body>
+<body class="bg_fff">
 <!-- ======================================== -->
 <!-- ==========   {Single Post*}   ========== -->
 <!-- ======================================== -->
@@ -26,14 +26,13 @@
     <div id="default_header"></div>
     <!--Ends Here-->
     <!--Hero Banner Section-->
-    <section class="blog_banner bg_edf4ff">
+    <section class="blog_banner">
         <div class="container">
-            <div class="banner_content_box sub_page_banner">
+            <div class="banner_content_box blog_page_banner">
                 <h1>Blog - Single Post</h1>
                 <div class="breadcrumb">
-                    <ul>
+                    <ul class="">
                         <li><a href="index.html">Home</a> </li>
-                        <li><a href="#">Blog</a> </li>
                         <li class="active"><a href="#">Single Post</a> </li>
                     </ul>
                     <!--breadcrumb-->
@@ -43,7 +42,7 @@
         </div>
     </section>
     <!--End Slider Section-->
-<section class="padding_top_120 padding_bottom_65">
+<section class="padding_top_100 padding_bottom_200">
     <div class="container">
         <div class="row">
             <div class="col-xl-9 col-lg-9">
@@ -498,6 +497,21 @@
         $("#default_header").load("include/default_header.html");
         $("#default_footer").load("include/default_footer.html");
     });
+    // Side Nav
+    function openNav() {
+        document.getElementById("mySidenav").style.right = "0";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-250px";
+    }
+    // Search Bar
+    function openSearch() {
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+    }
 </script>
 </body>
 </html>

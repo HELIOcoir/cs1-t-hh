@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="zxx">
 <head>
     <!--Title-->
     <title>Hostiko</title>
@@ -10,80 +10,130 @@
     <!--Key Words-->
     <meta name="keywords" content="">
     <!--bootstrap-->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     <!--fontawesome style-->
     <!--<link rel="stylesheet" href="assets/css/fonts-awesome.min.css">-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!--style-->
+    <link rel="stylesheet" href="assets/css/stacktable.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/stacktable.css">
-    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
 </head>
 <body>
-<div id="header"></div>
-<!--Hero Banner Section-->
-<section class="bg_sub_banner text-center color_fff">
-    <div class="banner_inner_content">
+<div class="wrapper">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!--Header-->
+    <div id="default_header"></div>
+    <!--Ends Here-->
+    <!--Hero Banner Section-->
+    <section class="padding_top_120 padding_bottom_180 bg_home_banner text-center">
         <div class="container">
-            <h1>Domain Name</h1>
-            <p>The optimal solution for fast reliable websites.</p>
-        </div>
-    </div>
-</section>
-<!--End Slider Section-->
-<!--Search Domain-->
-<section class="section_padding text-center">
-    <div class="container">
-        <h2 class="color_333 margin_bottom_5">Search Domain Name</h2>
-        <p class="margin_bottom_50">Lorem ipsum dolor sit amet nsdou tinasdfm tritani omittam.</p>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-xl-10 col-lg-10">
-                <form action="//akdesigner.com/whmcs-templates/cart.php?systpl=hostiko&layout=27&a=add&domain=register" method="post">
-                    <div class="search_area input-effect">
-                        <input type="text" placeholder="Enter your domain Name" class="text_field effect-20" name="query" size="20">
-                        <div class="btn_submit">
-                            <input type="submit" class="search_btn text-uppercase" value="SEARCH">
-                        </div>
-                    </div>
-                </form>
-                <ul class="popular_domains_list">
-                    <li><figure><img src="assets/images/domain_list_img01.png" alt=""></figure>
-                        <div class="domain_price">$9/yr</div>
-                    </li>
-                    <li><figure><img src="assets/images/domain_list_img02.png" alt=""></figure>
-                        <div class="domain_price">$7/yr</div>
-                    </li>
-                    <li><figure><img src="assets/images/domain_list_img03.png" alt=""></figure>
-                        <div class="domain_price">$9/yr</div>
-                    </li>
-                    <li><figure><img src="assets/images/domain_list_img04.png" alt=""></figure>
-                        <div class="domain_price">$12/yr</div>
-                    </li>
-                    <li><figure><img src="assets/images/domain_list_img05.png" alt=""></figure>
-                        <div class="domain_price">$20/yr</div>
-                    </li>
-                    <li><figure><img src="assets/images/domain_list_img06.png" alt=""></figure>
-                        <div class="domain_price">$9.99/yr</div>
-                    </li>
-                </ul>
+            <div class="banner_content_box sub_page_banner">
+                <h1>Domain Registration</h1>
+                <p>We Guarantee your site will run Quicker on our Cloud <br>
+                    than normal hosting, or your Money back.</p>
+                <figure><img src="assets/images/svg/domain_banner_img.svg" alt=""></figure>
             </div>
-            <div class="col"></div>
+            <div class="scroll_down_box" data-scroll-nav="9">
+                <div class="scroll_down_text">Scroll Down</div>
+                <figure><img src="assets/images/scroll_down_img.png" alt=""></figure>
+            </div>
+        </div>
+    </section>
+    <!--End Slider Section-->
+    <!--Hosting Plan Section-->
+    <section class="padding_bottom_65 padding_top_65 text-center" data-scroll-index="9">
+        <div class="container">
+            <div class="section_heading margin_bottom_40">
+                <h2>Choose Your Domain Today!</h2>
+                <p>Get Perfect Domain Name from Hostiko.</p>
+            </div>
+            <div class="outer_search_filed" data-aos="fade-up">
+                <form action="//akdesigner.com/whmcs-templates/cart.php?systpl=hostiko&layout=31&a=add&domain=register" method="post">
+                    <input type="text" class="search_domain_field" placeholder="Enter Your Domain Name:">
+                    <input type="submit" value="Search" class="search_domain_btn">
+                </form>
+            </div>
+            <ul class="domain_tlds_list">
+                <li>.com</li>
+                <li>.net</li>
+                <li>.info</li>
+                <li>.org</li>
+                <li>.co.uk</li>
+            </ul>
+        </div>
+    </section>
+    <!--Ends Here-->
+    <section class="padding_top_65 padding_bottom_65">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 margin_mobile">
+                    <div class="popular_domain_box">
+                        <div class="domain_name">.com</div>
+                        <p>Get the domain that will never go
+                            out of style.</p>
+                        <div class="hosting_plan_price_box"><small>From</small>$19<span>/month</span></div>
+                        <a href="#" class="btn_buy_domain">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 margin_mobile">
+                    <div class="popular_domain_box">
+                        <div class="domain_name">.net</div>
+                        <p>Get the domain that will never go
+                            out of style.</p>
+                        <div class="hosting_plan_price_box"><small>From</small>$29<span>/month</span></div>
+                        <a href="#" class="btn_buy_domain">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                    <div class="popular_domain_box">
+                        <div class="domain_name">.biz</div>
+                        <p>Get the domain that will never go
+                            out of style.</p>
+                        <div class="hosting_plan_price_box"><small>From</small>$39<span>/month</span></div>
+                        <a href="#" class="btn_buy_domain">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--COA Section-->
+    <div class="padding_top_120 padding_bottom_65 vps_coa_section domain_coa_section about_coa_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-5 col-md-5 domain_coa_img margin_mobile">
+                    <figure><img src="assets/images/svg/domain_coa_img.svg" alt=""></figure>
+                </div>
+                <div class="col-xl-6 col-lg-7 col-md-7 coa_content_box vps_coa_content_box about_coa_content_box">
+                    <h2>Build Your Server</h2>
+                    <p>Set yourself up for success with Europe's Fastest
+                        Web Hosting Solutions.</p>
+                    <a href="#" class="btn_coa">Get Started Now</a>
+                </div>
+
+            </div>
         </div>
     </div>
-</section>
-
-<section class="bg_f2f6f8">
-    <div class="container">
-        <!--Hosting Plans Section-->
-        <div class="plan_box section_padding text-center">
-            <h2 class="color_333">Cheap Domain Pricing</h2>
-            <p>Lorem ipsum dolor sit amet nsdou tinasdfm tritani omittam.</p>
-            <table class="large-only table domain_table">
+    <!--Ends Here-->
+    <!--Domain Tlds Table-->
+    <section class="padding_top_65 padding_bottom_65">
+        <div class="container">
+            <div class="section_heading margin_bottom_40 text-center">
+                <h2>Domain Pricing</h2>
+            </div>
+            <table class="large-only table domain_table" data-aos="fade-up">
                 <thead class="bg_230fae">
                 <tr class="">
-                    <th class="text-center">TLD's</th>
+                    <th class="text-center">TLDs</th>
+                    <th class="">Years</th>
                     <th class="">Register</th>
                     <th class="">Transfer</th>
                     <th class="">Renew</th>
@@ -91,50 +141,58 @@
                 </thead>
                 <tbody class="domain_table_body">
                 <tr>
-                    <td class="text-center">.Com</td>
+                    <td class="text-center">.com</td>
+                    <td class="default">01</td>
                     <td>$9.95</td>
                     <td>$9.99</td>
                     <td>$9.99</td>
                 </tr>
                 <tr>
-                    <td class="text-center">.Net</td>
+                    <td class="text-center">.net</td>
+                    <td class="default">01</td>
                     <td>$9.95</td>
                     <td>$9.99</td>
                     <td>$9.99</td>
                 </tr>
                 <tr>
-                    <td class="text-center">.Co.uk</td>
+                    <td class="text-center">.co.uk</td>
+                    <td class="default">01</td>
                     <td>$9.95</td>
                     <td>$9.99</td>
                     <td>$9.99</td>
                 </tr>
                 <tr>
-                    <td class="text-center">.Asia</td>
+                    <td class="text-center">.asia</td>
+                    <td class="default">01</td>
                     <td>$9.95</td>
                     <td>$9.99</td>
                     <td>$9.99</td>
                 </tr>
                 <tr>
-                    <td class="text-center">.Eu</td>
+                    <td class="text-center">.eu</td>
+                    <td class="default">01</td>
                     <td>$9.95</td>
                     <td>$9.99</td>
                     <td>$9.99</td>
                 </tr>
 
                 <tr>
-                    <td class="text-center">.Org</td>
+                    <td class="text-center">.org</td>
+                    <td class="default">01</td>
                     <td>$9.95</td>
                     <td>$9.99</td>
                     <td>$9.99</td>
                 </tr>
                 <tr>
-                    <td class="text-center">.Ca</td>
+                    <td class="text-center">.ca</td>
+                    <td class="default">01</td>
                     <td>$9.95</td>
                     <td>$9.99</td>
                     <td>$9.99</td>
                 </tr>
                 <tr>
-                    <td class="text-center">.Gov</td>
+                    <td class="text-center">.gov</td>
+                    <td class="default">01</td>
                     <td>$9.95</td>
                     <td>$9.99</td>
                     <td>$9.99</td>
@@ -142,83 +200,100 @@
                 </tbody>
             </table>
         </div>
-    </div>
-</section>
-<!--Ends Here-->
-<!--Popular Domains-->
-<section class="section_padding bg_0b257f text-center">
-    <div class="container">
-        <h2 class="color_fff">Most Popular Domains</h2>
-        <p class="color_fff margin_bottom_50">Lorem ipsum dolor sit amet nsdou tinasdfm tritani omittam.</p>
-        <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-6 mobile_margin">
-                <div class="popular_domain_box">
-                    <div class="domain_name">.ca</div>
-                    <div class="popular_domain_name">$5<small>/yr</small></div>
-                    <a href="#" class="btn_domain_box">Get Started</a>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-6 mobile_margin">
-                <div class="popular_domain_box">
-                    <div class="domain_name">.uk</div>
-                    <div class="popular_domain_name">$9<small>/yr</small></div>
-                    <a href="#" class="btn_domain_box">Get Started</a>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-6 mobile_margin">
-                <div class="popular_domain_box">
-                    <div class="domain_name">.net</div>
-                    <div class="popular_domain_name">$16<small>/yr</small></div>
-                    <a href="#" class="btn_domain_box">Get Started</a>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-6">
-                <div class="popular_domain_box">
-                    <div class="domain_name">.org</div>
-                    <div class="popular_domain_name">$22<small>/yr</small></div>
-                    <a href="#" class="btn_domain_box">Get Started</a>
+    </section>
+    <!--Ends Here-->
+    <!--Partner Section-->
+    <div class="padding_top_65 text-center">
+        <div class="container">
+            <div class="partner_section">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-xl-10 col-lg-10">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-6 margin_mobile">
+                                <figure><img src="assets/images/partner_img01.png" alt="" class="img-fluid"></figure>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-6 margin_mobile">
+                                <figure><img src="assets/images/partner_img02.png" alt="" class="img-fluid"></figure>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+                                <figure><img src="assets/images/partner_img03.png" alt="" class="img-fluid"></figure>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+                                <figure><img src="assets/images/partner_img04.png" alt="" class="img-fluid"></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"></div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-<!--Ends Here-->
-<!--Testimonial-->
-<div id="testimonial"></div>
-<!--Ends Here-->
-<div id="footer"></div>
+    <!--Ends Here-->
+    <div id="default_footer"></div>
+    <a href="javascript:" id="return-to-top" title="return to top"><i class="fa fa-arrow-up"></i></a>
+</div>
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/lazysizes.min.js"></script>
+<script src="assets/js/scrollIt.min.js"></script>
 <script src="assets/js/stacktable.js"></script>
 <script>
-    // Side Nav
-    function openNav() {
-        document.getElementById("mySidenav").style.right = "0";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.right = "-250px";
-    }
-
-
-    // Search Bar
-    function openSearch() {
-        document.getElementById("myOverlay").style.display = "block";
-    }
-
-    function closeSearch() {
-        document.getElementById("myOverlay").style.display = "none";
-    }
-
-    $('.table').stacktable({myClass:'dedicate_server_table'});
-</script>
-<script>
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('.wrapper').addClass('loaded');
+        }, 100);
+        AOS.init();
+    });
     $(function(){
-        $("#header").load("include/header.html");
-        $("#testimonial").load("include/testimonial.html");
-        $("#footer").load("include/footer.html");
+        $("#default_header").load("include/default_header.html");
+        $("#default_footer").load("include/default_footer.html");
+    });
+    $('.table').stacktable({myClass:'domain_table'});
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 350) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
     });
 
+    jQuery('.counter').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 8000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+
+</script>
+<script>
+    new WOW().init();
+    $(function(){
+        $.scrollIt({topOffset: -160});
+    });
+
+    $(window).on('scroll', function (event) {
+        var scrollValue = $(window).scrollTop();
+        if (scrollValue > 80) {
+            $('.navbar').addClass('affix');
+        } else{
+            $('.navbar').removeClass('affix');
+        }
+    });
 </script>
 </body>
 </html>

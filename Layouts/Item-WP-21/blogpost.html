@@ -20,21 +20,28 @@
     <link rel="icon" href="assets/images/favicon.png">
 </head>
 <body>
-<section class="reseller_banner">
-    <div id="default_header" class="animate-bottom main_header"></div>
+<div id="default_header"></div>
+<!--Hero Banner Section-->
+<section class="bg_6115d0 sub_banner_page padding_top_60 padding_bottom_60">
     <div class="container">
-        <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-7 hero_banner_content padding_top_200">
-                <h1>Blog Post</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="position-relative">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <h1>BLOG Post</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elitaenean commodo</p>
+                </div>
             </div>
-            <div class="col"></div>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li>Blog Post</li>
+            </ul>
         </div>
     </div>
 </section>
 <!--End Slider Section-->
 <!--Blog Post Start Here -->
-<section class="padding-bottom_75 padding_top_200 latest_news_section">
+<section class="padding_top_100 padding-bottom100 latest_news_section">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -137,7 +144,7 @@
                                         <input type="email" class="w-100 padding_10 blogpost_input_fields" id="email1" placeholder="Email:" />
                                     </div>
                                     <div class="col-lg-12 margin_bottom_20">
-                                        <textarea name="comment" id="" cols="50" rows="10" class="w-100 blogpost_input_fields padding_top_20 padding_left_10" placeholder="Comment:"></textarea>
+                                        <textarea name="comment" id="" cols="50" rows="10" class="w-100 blogpost_input_fields padding_top_20 padding_left_10">Comment:</textarea>
                                     </div>
                                 </div>
                                 <input type="submit" class="post_comment_button" value="Submit Now"/>
@@ -145,7 +152,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-4 blog_side_section left_bar">
+                <div class="col-lg-3 col-md-4 col-sm-4 blog_side_section">
                     <div class="float-left w-100 search_input">
                         <form action="success" class="form-group">
                             <div class="box">
@@ -213,70 +220,11 @@
 <div id="default_footer"></div>
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+
 <script>
-    $(document).ready(function() {
-        setTimeout(function() {
-            $('.wrapper').addClass('loaded');
-        }, 100);
-    });
     $(function(){
         $("#default_header").load("include/default_header.html");
         $("#default_footer").load("include/default_footer.html");
-    });
-    // Side Nav
-    function openNav() {
-        document.getElementById("mySidenav").style.right = "0";
-    }
-    function closeNav() {
-        document.getElementById("mySidenav").style.right = "-250px";
-    }
-    // Search Bar
-    function openSearch() {
-        document.getElementById("myOverlay").style.display = "block";
-    }
-
-    function closeSearch() {
-        document.getElementById("myOverlay").style.display = "none";
-    }
-
-    jQuery('.box_counter').each(function () {
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 6000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
-
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= 350) {        // If page is scrolled more than 50px
-            $('#return-to-top').fadeIn(200);    // Fade in the arrow
-        } else {
-            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-        }
-    });
-    $('#return-to-top').click(function() {      // When arrow is clicked
-        $('body,html').animate({
-            scrollTop : 0                       // Scroll to top of body
-        }, 500);
-    });
-</script>
-<script>
-
-    $(function(){
-        $.scrollIt({topOffset: 50});
-    });
-
-    $(window).on('scroll', function (event) {
-        var scrollValue = $(window).scrollTop();
-        if (scrollValue > 80) {
-            $('.navbar').addClass('affix');
-        } else{
-            $('.navbar').removeClass('affix');
-        }
     });
 </script>
 </body>

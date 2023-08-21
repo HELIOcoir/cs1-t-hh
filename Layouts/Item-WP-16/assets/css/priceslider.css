@@ -1,12 +1,3 @@
-/*
- * jQuery UI Slider 1.8.18
- *
- * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
- *
- * http://docs.jquery.com/UI/Slider#theming
- */
 .ui-slider {
 	position: relative;
 	text-align: left;
@@ -65,7 +56,6 @@
 .slider-container {
 	float: left;
 	width: 100%;
-	box-shadow: 0 10px 15px 0 rgba(0,0,0,.15);
 	border-radius: 6px;
 }
 .slider-container h3 {
@@ -86,52 +76,49 @@
 }
 .sliderbox {
 	display:inline-block;
-	width: 100%;
-	padding: 0 95px 15px;
+	width: 99%;
+	padding: 15px 0;
 	margin:0;
+	border-radius: 6px;
 }
-/*.slider-container #slider {*/
-	/*margin:0 auto 20px;*/
-	/*width: 94%;*/
-	/*height: 4px;*/
-	/*padding: 0;*/
-	/*border: 0;*/
-	/*background:#fff*/
-/*}*/
-/*.slider-container #slider .ui-slider-range {*/
-	/*height: 4px;*/
-	/*background: #d7263d;*/
-/*}*/
+.slider-container #slider {
+	width: 100%;
+	height: 30px;
+	padding: 0;
+	border: 0;
+	background:url("../images/slider_bar.png")
+}
+.slider-container #slider .ui-slider-range {
+	height: 30px;
+	background: url("../images/slider_active.png");
+}
 .slider-container #slider .ui-slider-handle {
 	outline: none;
-	background: url(../images/handle.png) no-repeat left top;
+	background: url(../images/slider_handle.png) no-repeat left top;
 	border-radius: 0;
 	border: 0;
-	width: 28px;
-	height: 28px;
-	margin: -9px 0 0 -7px;
+	width: 50px;
+	height: 55px;
+	margin: -6px 0 0 0;
 }
 .slider-container #slider .ui-slider-handle:hover {
 	cursor: pointer;
 }
 .price_rangetxt {
-	margin: 0 auto 39px;
 	width: 100%;
-	padding: 0;
-	float: left;
+	padding: 0 47px;
+	float: left
 }
 .price_rangetxt div.icon {
 	width: 20%;
-	height: 142px;
+	margin-bottom: 30px;
 	font-size: 16px;
 	line-height: 23px;
 	cursor: pointer;
 	font-weight: 400;
-	float: left;
-	background:url(../images/vps_01.svg) no-repeat center top;
-}
+	float: left;}
 .heading{
-	width: 18%;
+	width: 23%;
 	float: left;
 	margin-left: 1%;
 	margin-right: 1%;
@@ -140,129 +127,112 @@
 
 }
 .price_rangetxt div.icon span{
-	/*margin:38px 0 0;*/
-	/*display:block;*/
-	/*text-transform: uppercase;*/
+	display:block;
+	text-transform: uppercase;
+	color: #454545;
+	font-size: 20px;
+	line-height: 34px;
+	font-weight: 600;
 }
-.price_rangetxt div.current {
-	color:#fff;
-	background:url(../images/vps_02.svg) no-repeat center top;
 
-}
-.heading div.current1{
-	background-color: #080245; border-radius: 6px; color: #3fd7d7; position: relative}
-.heading div.current1:before{
-	position: absolute;
-	content: "";
-	width: 0;
-	height: 0;
-	border-left: 7px solid transparent;
-	border-right: 7px solid transparent;
-	border-top: 10px solid #080245;
-	bottom: -10px;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-}
+.price_rangetxt div.current span{color: #f40076; border: 2px solid #f40076; background-color: #fff; border-radius: 5px; margin: 0 60px}
+div.current{position: relative}
+div.current:before{position: absolute; content: ""; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 10px solid #f40076; bottom: -10px; left: 0; right: 0; margin: 0 auto;}
 .price_content {
-	margin:0 auto;
 	width:100%;
 	text-align:center;
-	float: left;
-	background-color: #fff;
-	padding: 0 95px;
+	position: relative;
 }
 .price_content .smallbox {
 	float:left;
-	width:20%;
-	height: 95px;
-	background: #fff;
-	padding: 35px 0 0;
+	width:15%;
+	height: 60px;
+	display: table;
 }
 .price_content .smallbox:last-child{
 	border: none;
 }
 .price_content .image_holder {
-
-margin-bottom: 22px;
-
+position: relative;
 }
+
+
 .price_content .value_text {
 	font-size: 18px;
 	line-height: 20px;
-	color:#666;
+	color:#454545;
+	font-weight: 500;
 	text-align: left;
-	font-weight: 300;
-	padding-left: 65px;
+	padding-top: 15px;
+	padding-left: 15px;
 }
+.top_heading{float: left; width: 100%; padding: 0 55px}
 .top_heading .text_value{
 
 	line-height: 36px;
 	padding:7px 0;
-	color:#fff;
+	color:#000;
 	text-align: center;
 	font-size: 18px;
 	font-weight: 500;
 }
 .price_content .value {
 	display: block;
-	color:#080245;
+	color:#454545;
 	margin: 3px 0 0;
 	line-height:18px;
-	font-weight: 700;
-	font-size: 18px;
+	font-weight: 500;
+	font-size: 20px;
 }
-
+.discounted_price span{font-size: 40px; line-height: 36px; font-weight: 500; color: #f40076}
+.promotion_area{text-align: left; padding: 45px 15px}
+.coupon_code span{font-size: 24px; line-height: 36px; color: #454545; font-weight: 500}
+.slider_detail{padding: 0 47px}
 .price_txt {
-	color:#666;
-	font-size:18px;
-	line-height:24px;
-	font-weight: 400;
-	padding: 30px 27% 60px;
-	float: left;
-	width: 100%;
+	color:#5c43bc;
+	font-size:40px;
+	line-height:36px;
+	font-weight: 500;
+	min-width: 190px;
 }
 .price_txt .numeric1 {
-	line-height:54px;
-	font-size:72px;
-	font-weight: 700;
-	color: #080245;
-	display: inline-block;
-	min-width: 180px;
-	float: left;
+	line-height:36px;
+	font-size:40px;
+	font-weight: 500;
+	color: #5c43bc;
 }
-.vps_btn:hover{background-color: #080245; border: 1px solid #080245; color: #3fd7d7; transition-duration: 0.5s}
+.cutted_price{font-size: 20px; font-weight: 500; color: #454545; line-height: 36px; text-align: left}
 .vps_btn {
-	color:#080245;
+	color:#fff;
 	display:inline-block;
-	font-size:18px;
+	font-size:20px;
 	line-height:46px;
-	background:#fff;
+	background:#5c43bc;
 	text-decoration:none;
 	font-weight: 400;
-	border-radius: 6px;
-	padding: 5px 45px;
-	border: 1px solid #080245;
-	margin-left: 30px;
-	box-shadow: 0 10px 15px 0 rgba(0,0,0,.15);
+	padding: 10px 55px;
+	border: 2px solid #5c43bc;
+	border-radius: 10px;
+	transition: all ease-in-out 0.4s;
+	margin-left: 135px;
 }
+.vps_btn:hover{border: 2px solid #f40076; background-color: #f40076; color: #fff}
 .tag{
 	position:absolute;
 	right:0;
 	top:0;
 }
 .price-slider-section{
-	padding: 0;
+	padding: 0 47px;
 	float: left;
 	width: 100%;
 	border-radius: 6px;
 }
-.bg_slider{background: linear-gradient(#3dd0d1, #090446); border-radius: 6px 6px 0 0; padding: 60px 0 0}
+
 .nomargin_rt{
 	margin-right: 0 !important;
 }
 .price-box-section{
-	background: #fff;
 	float: left;
 	width: 100%;
 	border-radius: 6px

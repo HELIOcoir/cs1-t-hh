@@ -19,18 +19,27 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/all-stylesheets.css" type="text/css"/>
 </head>
 <body>
-<div id="header"></div>
+<div id="default_header" class="animate-bottom main_header"></div>
 <!--Hero Banner Section-->
-<section class="bg_sub_banner text-center color_fff affiliates_banner">
-    <div class="banner_inner_content padding_top_50">
-        <div class="container">
+<section class="blog_banner bg_edf4ff">
+    <div class="container">
+        <div class="banner_content_box sub_page_banner">
             <h1>Tables</h1>
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="#">Tables</a></li>
+                </ul>
+                <!--breadcrumb-->
+            </div>
+            <!--page-title-->
         </div>
     </div>
 </section>
-<!--End Banner Section-->
+<!--End Slider Section-->
 <!--Typography Start Here -->
 <div class="col-xs-12 padding_top_100 padding_bottom_100">
     <div class="container">
@@ -263,32 +272,21 @@
     <!-- col -->
 </div>
 <!--End Here-->
-<div id="footer"></div>
+<div id="default_footer"></div>
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script>
-
-
-    // Side Nav
-    function openNav() {
-        document.getElementById("mySidenav").style.right = "0";
-    }
-    function closeNav() {
-        document.getElementById("mySidenav").style.right = "-250px";
-    }
-    // Search Bar
-    function openSearch() {
-        document.getElementById("myOverlay").style.display = "block";
-    }
-    function closeSearch() {
-        document.getElementById("myOverlay").style.display = "none";
-    }
-</script>
-<script>
     $(function(){
-        $("#header").load("include/header.html");
-        $("#testimonial").load("include/testimonial.html");
-        $("#footer").load("include/footer.html");
+        $("#default_header").load("include/default_header.html");
+        $("#default_footer").load("include/default_footer.html");
+    });
+    $(window).on('scroll', function (event) {
+        var scrollValue = $(window).scrollTop();
+        if (scrollValue > 80) {
+            $('.navbar').addClass('affix');
+        } else{
+            $('.navbar').removeClass('affix');
+        }
     });
 </script>
 

@@ -1,4 +1,3 @@
-
 .ui-slider {
 	position: relative;
 	text-align: left;
@@ -13,19 +12,17 @@
 .ui-slider .ui-slider-range {
 	position: absolute;
 	z-index: 1;
+	font-size: 10px;
 	display: block;
 	border: 0;
-	width: 100%;
-	height: 30px;
-	background: url("../images/active_slider_bar.png");
-	border-radius: 10px;
+	background-position: 0 0;
 }
 .ui-slider-horizontal {
-	height: .8em;
+	height: 10px;
 }
 .ui-slider-horizontal .ui-slider-handle {
-	top: -.3em;
-	margin-left: -.6em;
+	top: 10px;
+	margin-left: 10px;
 }
 .ui-slider-horizontal .ui-slider-range {
 	top: 0;
@@ -38,13 +35,13 @@
 	right: 0;
 }
 .ui-slider-vertical {
-	width: .8em;
+	width: 10px;
 	height: 100px;
 }
 .ui-slider-vertical .ui-slider-handle {
-	left: -.3em;
+	left: -10px;
 	margin-left: 0;
-	margin-bottom: -.6em;
+	margin-bottom: 0;
 }
 .ui-slider-vertical .ui-slider-range {
 	left: 0;
@@ -56,182 +53,196 @@
 .ui-slider-vertical .ui-slider-range-max {
 	top: 0;
 }
-/*.slider-container {*/
-	/*float: left;*/
-	/*width: 100%;*/
-	/*border-radius: 6px;*/
-/*}*/
+.slider-container {
+	background-color: #fff;
+	border: 1px solid #cccccc;
+	padding: 30px;
+}
+.slider_node_outer {border: 1px solid #cccccc;}
 .slider-container h3 {
-	margin:0 0 10px;
-	padding:0;
-	color:#000;
-	font-size:30px;
-	line-height:30px;
-	font-weight:normal;
+	margin: 0 0 10px;
+	padding: 0;
+	color: #000;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
 }
 .slider-container h3 span {
-	color:#ff9226;
-	font-weight:700;
+	color: #ff9226;
+	font-weight: 700;
 }
 .slider-container p {
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 .sliderbox {
-	display:inline-block;
-	width: 100%;
-	padding: 0;
-	margin:0;
-	border-radius: 6px; position: relative;
+	display: inline-block;
+	width: 25px;
+	margin: 0;
+	border-radius: 0px;
 }
-.sliderbox:before{position: absolute; content: ""; background: url("../images/slider_circle.png"); width: 20px; height: 20px; top: 20px; left: -20px}
-.sliderbox:after{position: absolute; content: ""; background: url("../images/slider_circle.png"); width: 20px; height: 20px; top: 20px; right: -20px}
 .slider-container #slider {
 	width: 100%;
-	height: 30px;
+	height: 320px;
 	padding: 0;
 	border: 0;
 	margin: 0 auto;
-	background: url("../images/slider_bar.png") no-repeat center;
-	top: 15px;
-	border-radius: 32px;
+	background: url(../images/vps/slide_bar.png)no-repeat
 }
-.slider_price_box{padding: 20px 0; text-align: center}
-.slider_price_box .price_txt strike{font-size: 16px; line-height: 24px; color: #2f395d; font-weight: 700}
-.slider_price_box .price_txt{font-size: 20px; font-weight: 700; line-height: 42px; color: #0d79ed; margin-bottom: 20px}
-.slider_price_box .price_txt span#price_val{font-size: 36px; font-weight: 700}
+.slider-container #slider .ui-slider-range {
+	background-color: #0c94ab; background-image: linear-gradient(90deg, #0c94ab 0%, #3dc154 100%);	
+	height: 300px;
+	border: 1px solid #03767a;
+	border-bottom: hidden;
+	left: 0;
+	bottom: 0;
+	border-radius: 0px;
+	transition: all ease-in-out 0.3s;
+}
 .slider-container #slider .ui-slider-handle {
 	outline: none;
-	background: url(../images/slider_handle.png) no-repeat left top;
+	background: url(../images/vps/slider_handle.png)no-repeat center;
 	border-radius: 0;
 	border: 0;
-	width: 50px;
-	height: 50px;
-	margin: -7px 0 0 -20px;
+	width: 45px;
+	height: 45px;
 }
 .slider-container #slider .ui-slider-handle:hover {
 	cursor: pointer;
 }
 .price_rangetxt {
-	width: 100%;
+	padding: 29px 0;
 }
 .price_rangetxt div.icon {
-	width: 98px;
-	font-size: 16px;
-	line-height: 18px;
+	font-size: 18px;
+	line-height: 24px;
 	cursor: pointer;
-	font-weight: 400;
-	float: left;
-	display: table;
-
+	font-weight: 700;
+	padding: 20px 30px;
+	text-align: center;
 }
-.heading{
+.heading {
 	width: 23%;
 	float: left;
 	margin-left: 1%;
 	margin-right: 1%;
 	font-size: 20px;
-	font-weight: 700
+	font-weight: 700;
 
 }
-.price_rangetxt div.icon span{
+.price_rangetxt div.icon span {
+	display: block;
 	text-transform: uppercase;
-	color: #2f395d;
-	font-size: 20px;
+	color: #777;
+	font-size: 16px;
 	line-height: 24px;
 	font-weight: 700;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	letter-spacing: 1px;
 }
-.price_rangetxt div.current{background-color: transparent;}
-.price_rangetxt div.current span{color: #0d79ed}
+
+.price_rangetxt div.current span {color: #3dc154}
 .price_content {
-	width:100%;
-	text-align:center;
+	width: 100%;
+	text-align: center;
 	position: relative;
+	
 }
 .price_content .smallbox {
-	float:left;
-	width:15%;
+	float: left;
+	width: 15%;
 	height: 60px;
 	display: table;
 }
-.price_content .smallbox:last-child{
+.price_content .smallbox:last-child {
 	border: none;
 }
-.image_holder {width: 30%; float: left; padding-top: 7px}
-.slider_feature_box .value_text{float: left; width: 70%}
-
-.slider-container{width: 100%; margin: 0 auto; background-color: #fff; border-radius: 10px; padding: 60px; box-shadow: 0 0 20px rgba(157,184,209,.19)}
-.value_text {
-	font-size: 18px;
-	line-height: 24px;
-	color:#777;
+.price_content .value_text {
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
 	font-weight: 400;
-	text-align: left;
+	text-align: center;
+	padding-top: 20px;
+	position: relative;
+	font-family: 'Lato', sans-serif;
 }
-.top_heading{float: left; width: 100%; padding: 0 55px}
-.top_heading .text_value{
+.top_heading {float: left; width: 100%; padding: 0 55px}
+.top_heading .text_value {
 
 	line-height: 36px;
-	padding:7px 0;
-	color:#000;
+	padding: 7px 0;
+	color: #000;
 	text-align: center;
 	font-size: 18px;
 	font-weight: 500;
 }
-.value_text .value {
-	line-height:24px;
-	color: #ff7211;
+.price_content .value {
+	display: block;
+	color: #fff;
+	line-height: 20px;
+	font-weight: 400;
 	font-size: 20px;
+}
+.promotion_area {text-align: left; padding: 45px 15px}
+.coupon_code span {font-size: 24px; line-height: 36px; color: #454545; font-weight: 500}
+.slider_detail {padding: 30px 47px; background-color: #fff}
+.price_txt {
+	color: #ffffff;
+	font-size: 30px;
+	line-height: 36px;
 	font-weight: 700;
 }
-.promotion_area{text-align: left; padding: 45px 15px}
-.coupon_code span{font-size: 24px; line-height: 36px; color: #454545; font-weight: 500}
-.slider_detail{padding: 60px 0 0}
-/*.price_txt {*/
-	/*color:#0e1f35;*/
-	/*font-size:18px;*/
-	/*line-height:24px;*/
-	/*min-width: 190px;*/
-/*}*/
-
-
-/*.price-slider-section{*/
-
-	/*float: left;*/
-	/*width: 100%;*/
-	/*border-radius: 6px;*/
-/*}*/
-
-.nomargin_rt{
-	margin-right: 0 !important;
+.price_txt .numeric1 {
+	line-height: 56px;
+	font-size: 50px;
+	font-weight: 700;
+	color: #ffffff;
 }
-.price-box-section{
+.cutted_price {font-size: 20px; font-weight: 500; color: #454545; line-height: 36px; text-align: left}
+.vps_btn {
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 24px;
+	background: #0c94ab;
+	text-decoration: none;
+	margin: 15px 5px 15px 5px;
+	padding: 12px 0;
+	border: 2px solid #0c94ab;
+	border-radius: 0px;
+	transition: all ease-in-out 0.4s;
+	letter-spacing: 0.5px;
+}
+
+.vps_btn:hover {border: 2px solid #ffffff; background-color: #ffffff; color: #0c94ab}
+.roof{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.price-slider-section {
+	padding: 30px 27px 20px 50px;
+	float: left;
+	width: 54%;
+	border-radius: 0px;
+}
+
+.nomargin_rt {
+	margin-right: 0!important;
+}
+.price-box-section {
 	float: left;
 	width: 100%;
-	border-radius: 6px
+	border-radius: 0px;
 }
-.vps_slider_listing li{display: inline-block; padding: 25px 20px 0; vertical-align: middle}
-.vps_slider_listing li:first-child{padding-left: 0}
-.vps_slider_listing li:last-child{padding-right: 0}
-.slider_nodes{width: 100%}
-.slider_nodes li{display: inline-block; padding: 0 40px 30px}
-.buynow_button{font-size: 14px; line-height: 24px; color: #fff; font-weight: 700; border-radius: 10px; display: inline-block; background-color: #2f395d; padding: 15px 50px; transition: all ease-in-out 0.5s}
-.buynow_button:hover{background-color: #ff7211; color: #fff}
-.price_rangetxt div.icon.current{position: relative}
-.price_rangetxt div.icon.current:before{    position: absolute; content: ""; width: 4px; height: 30px; background: #0d79ed; bottom: -35px; left: 0; right: 0; margin: 0 auto;}
-.price_rangetxt div.icon.current:after{position: absolute; content: ""; width: 10px; height: 10px; border-radius: 100%; background: #0d79ed; bottom: -35px; left: 0; right: 0; margin: 0 auto;}
-.slider_feature_box{border: 1px solid #ebeae6; border-radius: 10px; box-shadow: 0 0 20px rgba(157,184,209,.19); padding: 33px 30px; float: left; width: 100%}
-.coupon_box{background-color: #eef6fe; padding: 20px 0; text-align: center; border-radius: 10px 10px 0 0}
-.outer_coupon_box{border: 1px solid #ebeae6; border-radius: 10px; box-shadow: 0 0 20px rgba(157,184,209,.19);}
-.discount_coupon_box{font-size: 30px; line-height: 30px; font-weight: 700; color: #2f395d; margin-bottom: 10px}
-.coupon_code{font-size: 16px; line-height: 20px; font-weight: 700; color: #2f395d}
-.coupon_code span{color: #ff7211; font-size: 16px; line-height: 20px; font-weight: 700}
-
-
-
-
-
+.inner_price_content {
+	background-color: #0c94ab; background-image: linear-gradient(90deg, #0c94ab 0%, #3dc154 100%);
+	padding: 30px 60px;
+	height: 185px;
+}
+.padding_left {padding-left: 5px}
+.padding_right {padding-right: 5px}
+.price_box {padding: 35px 0}
+.outer_slider {padding: 50px 110px 0; background-color: #fff; border: 1px solid #d5d1ef}
+.coupon_code_box {font-size: 40px; line-height: 46px;}
+.coupon_code_box_inner {background-color: #242424; padding: 14px 0;}
+.slider_price_box {background-color: #333333;}
+.vps_price, .coupon_code_box, .coupon_code_box_inner {top: 0; bottom: 0; margin: auto;}

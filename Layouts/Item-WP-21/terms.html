@@ -21,23 +21,26 @@
     <link rel="stylesheet" href="assets/css/typography.css">
 </head>
 <body>
-<section class="shared_banner">
-    <div id="default_header" class="animate-bottom main_header"></div>
+<div id="default_header"></div>
+<!--Hero Banner Section-->
+<section class="bg_6115d0 sub_banner_page padding_top_60 padding_bottom_60">
     <div class="container">
-        <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-7 hero_banner_content padding_top_200">
-                <h1>Terms and Conditions</h1>
+        <div class="position-relative">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <h1>Terms and Conditions</h1>
+                </div>
             </div>
-            <div class="col"></div>
-        </div>
-        <div class="scroll_btn" data-scroll-nav="1">
-            <figure><img src="assets/images/scroll_img.png" alt=""></figure>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Terms</li>
+            </ul>
         </div>
     </div>
 </section>
 <!--End Slider Section-->
 <!--Typography Start Here -->
-<div class="col-xs-12 padding_bottom_75 padding_top_200 privacy_policy_text bg_f2f6f8">
+<div class="col-xs-12 padding_top_75 padding_bottom_60 privacy_policy_text bg_f2f6f8">
     <div class="container">
         <h3 class="color_333 margin_bottom_30">Account Terms</h3>
         <ol class="terms_list">
@@ -68,14 +71,6 @@
     $(function(){
         $("#default_header").load("include/default_header.html");
         $("#default_footer").load("include/default_footer.html");
-    });
-    $(window).on('scroll', function (event) {
-        var scrollValue = $(window).scrollTop();
-        if (scrollValue > 80) {
-            $('.navbar').addClass('affix');
-        } else{
-            $('.navbar').removeClass('affix');
-        }
     });
 </script>
 

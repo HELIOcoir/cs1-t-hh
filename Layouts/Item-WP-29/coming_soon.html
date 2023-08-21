@@ -24,65 +24,60 @@
 <body>
 
 <!--Coming Soon-->
-<section class="coming_soon bg_coming_soon">
+<section class="coming_soon bg_coming_soon container-fluid">
     <div class="inner_coming_soon">
-        <div class="row">
-            <div class="col-xl-6 col-lg-6">
-                <figure class="coming_soon_main_img margin_bottom_50"><img src="assets/images/coming_soon_banner_img.png" alt=""></figure>
-                <ul class="coming_soon_social_links">
-                    <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                </ul>
+        <div class="coming_soon_logo">
+            <a href="index.html"><figure><img src="assets/images/svg/logo.svg" alt=""></figure></a>
+        </div>
+        <div class="small_text">Our website is</div>
+        <h1>Coming soon</h1>
+        <div class="count counter_outer_box">
+            <div class="counter_box">
+                <div class="inner_counter_box">
+                    <div class="countd">
+                        <div id="days" class="counter">00</div>
+                        <div>days</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xl-6 col-lg-6 coming_soon_content_box text-left">
-                <div class="coming_soon_heading margin_bottom_40">
-                    <small>Our website is</small>
-                    <br>
-                    Coming soon
-                </div>
-                <div class="count counter_outer_box">
+            <div class="counter_box">
+                <div class="inner_counter_box">
                     <div class="countd">
-                        <span id="days">00</span><br>
-                        days
-                    </div>
-                    <div class="countd">
-                        <span id="hours">00</span><br>
-                        hours
-                    </div>
-                    <div class="countd">
-                        <span id="mins">00</span><br>
-                        minutes
-                    </div>
-                    <div class="countd">
-                        <span id="secs">00</span><br>
-                        seconds
+                        <div id="hours" class="counter">00</div>
+                        <div>hours</div>
                     </div>
                 </div>
-                <p>We’re Doing our Best to <br>
-                    Lauch <span class="color_fd5481 font_weight_700">Asap</span>
-                </p>
-                <div class="heading_coming_soon_subscribe_email">Subscribe to get notified!</div>
-                <div class="outer_coming_soon_subscribe_email margin_bottom_50">
-                    <input type="text" class="coming_soon_subscribe_email" placeholder="Enter Your Email">
-                    <input type="Submit" value="Subscribe" class="submit_email_subscribe">
-                </div>
-                <div class="heading_coming_soon_subscribe_email">Get in touch with us</div>
-                <div>
-                    <div class="w-50 float-left coming_soon_contact_us">
-                        <strong>Visit Us:</strong>121 King Street, Melbourne
-                        Victoria 3000 Australia
+            </div>
+            <div class="counter_box">
+                <div class="inner_counter_box">
+                    <div class="countd">
+                        <div id="mins" class="counter">00</div>
+                        <div>minutes</div>
                     </div>
-                    <div class="w-50 float-left">
-                        <ul class="coming_soon_contact_us_list">
-                            <li><strong>Call:</strong> +1-212-732-46-19</li>
-                            <li><strong>Email:</strong> info@hostiko.com</li>
-                        </ul>
+                </div>
+            </div>
+            <div class="counter_box">
+                <div class="inner_counter_box">
+                    <div class="countd">
+                        <div id="secs" class="counter">00</div>
+                        <div>seconds</div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="coming_soon_tag_line margin_top_40 margin_bottom_10">We’re Doing our Best to Launch <span class="color_3e7ccc">ASAP</span></div>
+        <p>We're redesigning our website to make it more convenient and safe for you. We'll be <br> back with new features and amazing experiences. See you soon!</p>
+        <div class="subscribe_text">Subscribe to Get Notified!</div>
+        <div class="subscribe_email_box">
+            <input type="text" class="name subscribe_email_field" placeholder="Enter Your Email">
+            <input type="submit" class="subscribe_btn" value="Subscribe">
+        </div>
+        <ul class="coming_soon_social_links">
+            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        </ul>
     </div>
 </section>
 <!--Ends Here-->
@@ -94,7 +89,7 @@
 
 </script>
 <script>
-    var count = new Date("oct 2,2019 00:00:00").getTime();
+    var count = new Date("feb 15,2020 00:00:00").getTime();
     var x = setInterval( function() {
         var now = new Date().getTime();
         var d = count - now;

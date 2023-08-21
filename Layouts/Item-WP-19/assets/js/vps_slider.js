@@ -9,7 +9,7 @@ var link_arr = 		new Array('$10','$25','$50','$75','$100','$125');
 var b_url = 'https://www.your-domain.com/?cmd=cart&action=add&id=';
 
 // This is what you want the default position to be
-var def_pos = 3;
+var def_pos = 2;
 
 $(document).ready(function(){
 
@@ -18,8 +18,8 @@ $(document).ready(function(){
         animate: true,
         min: 1,
         max: 5,
-        paddingMin: 60,
-        paddingMax: 120,
+        paddingMin: 50,
+        paddingMax: 80,
         change: function( event, ui ) {
             $('.slider-container #cpu_val span.value').html(cpu_arr[ui.value-1]);
             $('.slider-container #ram_val span.value').html(ram_arr[ui.value-1]);

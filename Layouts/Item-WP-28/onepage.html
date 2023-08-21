@@ -10,6 +10,8 @@
     <!--Key Words-->
     <meta name="keywords" content="">
     <!--bootstrap-->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--fontawesome style-->
     <!--<link rel="stylesheet" href="assets/css/fonts-awesome.min.css">-->
@@ -17,309 +19,460 @@
     <!--style-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="icon" href="assets/images/favicon.png">
-
-
+    <link rel="shortcut icon" href="assets/images/favicon.png">
 </head>
 <body>
-<!--Navigation Bar-->
-<header>
-    <!--Header-->
-    <nav class="navbar navbar-expand-lg top_navigation onepage_nav">
-        <a class="navbar-brand default_logo" href="index.html"><figure><img src="assets/images/logo.svg" alt=""></figure></a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse mobile_navbar" id="navbarSupportedContent">
-            <ul class="navbar-nav navigation_bar">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#" data-scroll-nav="0">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-scroll-nav="1">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-scroll-nav="2">Plans</a>
-                </li>
-                <li class="nav-item outer_mega_menu">
-                    <a class="nav-link" href="#" data-scroll-nav="3">
-                        Testimonial
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-scroll-nav="4">Contact</a>
-                </li>
-            </ul>
-            <ul class="ml-auto right_nav_links">
-                <li><div class="bg_social_icon float-left"><i class="fa fa-lock"></i></div><a href="#"> Sign In</a></li>
-                <li><div class="bg_social_icon float-left"><i class="fa fa-search"></i></div><a href="#"> Search</a></li>
-            </ul>
-        </div>
-    </nav>
+<div class="wrapper">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!--Navigation Bar-->
+    <header>
+        <!--Header-->
+        <nav class="navbar navbar-expand-lg default_navigation">
+            <div class="container">
+                <a class="navbar-brand default_logo" href="index.html"><figure><img src="assets/images/svg/logo.svg" alt=""></figure></a>
+                <button class="navbar-toggler collapsed mobile_toggle_btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse default_navigation_box" id="navbarSupportedContent">
+                    <ul class="navbar-nav inner_default_navigation ml-auto">
+                        <li class="nav-item active default_header_dd">
+                            <a class="nav-link" href="#" data-scroll-nav="1">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item default_header_dd">
+                            <a class="nav-link" href="#" data-scroll-nav="2">Plan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="3">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="4">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="5">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Ends Here-->
+    </header>
     <!--Ends Here-->
-</header>
-<!--Ends Here-->
-<!--Hero Banner Section-->
-<section class="hero_banner_img padding_bottom_35 padding_top_100 float-left w-100" data-scroll-index="0">
-    <div class="banner_content">
+    <!--Hero Banner Section-->
+    <section class="padding_top_100 padding_bottom_100 bg_home_banner" data-scroll-index="1">
         <div class="container">
-            <div class="row mobile_banner_margin">
-                <div class="col-xl-6 col-lg-6 col-md-6  padding_top_200 order02 mobile_text_center">
-                    <h1 class="font_size_48 line_height_60 color_222 margin_bottom_30">Fastest Performance<br>
-                        Web Hosting
-                    </h1>
-                    <p class="font_size_18 line_height_30 color_5a5f69 margin_bottom_50 font_weight_500">Dedicated Servers are ideal for Larger Businesses<br> and
-                        High Traffic Websites</p>
-                    <a href="#" class="learn-more">
-                        <div class="circle">
-                            <span class="icon arrow"></span>
-                        </div>
-                        <p class="button-text">Get Started Now</p>
-                    </a>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 order01 mobile_img">
-                    <figure><img src="assets/images/hero_banner_img.svg" alt="" class="img-fluid"></figure>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--End Slider Section-->
-<!--Email Hosting Feature-->
-<section class="padding_bottom_45 padding_top_35 text-center float-left w-100" data-scroll-index="1">
-    <div class="container">
-        <h2 class="margin_bottom_20 font_size_36 line_height_48 color_222">Hostiko Guarantee</h2>
-        <p class="margin_bottom_80">From professional business to enterprise, we've got you covered!</p>
-        <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-4 padding_top_170 margin_box">
-                <div class="guarantee_box">
-                    <div class="guarantee_img01"></div>
-                    <div class="guarantee_box_heading margin_bottom_10">Money Back Guarantee</div>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4">
-                <div class="guarantee_box margin_box mobile_margin_box">
-                    <div class="guarantee_img02"></div>
+            <div id="banner_slider" class="carousel slide outer_banner_slider" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators banner_slider_indicator">
+                    <li data-target="#banner_slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#banner_slider" data-slide-to="1"></li>
+                    <li data-target="#banner_slider" data-slide-to="2"></li>
+                </ul>
 
-                    <div class="guarantee_box_heading margin_bottom_10">Fastest SSD Servers</div>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
-                </div>
-                <div class="guarantee_box margin_box mobile_margin_box">
-                    <div class="guarantee_img03"></div>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 order02 banner_slider_content_box">
+                                <div class="server_tag">VPS Server</div>
+                                <h1>Enterprise-grade VPS
+                                    hosting from Hostiko!</h1>
+                                <ul class="home_banner_list">
+                                    <li>Up to 100 Mbps contended connectivity</li>
+                                    <li>Hosting in Tier 2 datacentres</li>
+                                    <li>Virtual server back-up options</li>
+                                </ul>
+                                <a href="vps_hosting.html" class="btn_banner">Get Started Now</a>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col-xl-4 col-lg-4 col-md-5 order01 banner_slider_img_box">
+                                <figure><img src="assets/images/banner_img.png" alt="" class="img-fluid"></figure>
+                                <div class="price_tag">
+                                    <div class="inner_price_tag">
+                                        <div><small>Only</small>
+                                            <br>$5.99 <br> <small>/mo</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item home_banner_slide02">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-5 banner_slider_img_box">
+                                <figure><img src="assets/images/banner_img02.png" alt="" class="img-fluid"></figure>
+                                <div class="price_tag">
+                                    <div class="inner_price_tag">
+                                        <div><small>Only</small>
+                                            <br>$5.99 <br> <small>/mo</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 banner_slider_content_box">
+                                <div class="server_tag">VPS Server</div>
+                                <h1>Enterprise-grade VPS
+                                    hosting from Hostiko!</h1>
+                                <ul class="home_banner_list">
+                                    <li>Up to 100 Mbps contended connectivity</li>
+                                    <li>Hosting in Tier 2 datacentres</li>
+                                    <li>Virtual server back-up options</li>
+                                </ul>
+                                <a href="vps_hosting.html" class="btn_banner">Get Started Now</a>
+                            </div>
 
-                    <div class="guarantee_box_heading margin_bottom_10">Cloud Technology</div>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 padding_top_170">
-                <div class="guarantee_box">
-                    <div class="guarantee_img04"></div>
-
-                    <div class="guarantee_box_heading margin_bottom_10">24/7 Live Support</div>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--Ends Here-->
-<!--Email Plans Section-->
-<section class="padding_top_60 padding_bottom_60 text-center float-left w-100" data-scroll-index="2">
-    <div class="container">
-        <h2 class="margin_bottom_20 font_size_36 line_height_48 color_222">Our Hosting Plans</h2>
-        <p class="margin_bottom_50">From professional business to enterprise, we've got you covered!</p>
-        <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-4 margin_box">
-                <div class="hosting_plan_box">
-                    <div class="hosting_plan_name">Web Hosting</div>
-                    <div class="hosting_plan_box_price">$49<span>/Mo</span> </div>
-                    <div class="discount_tag">Save Up to 30% <br><span>Annual Billing</span> </div>
-                    <ul class="hosting_plan_listing">
-                        <li>Unlimited Disk Space</li>
-                        <li>99.9% Uptime Guarantee</li>
-                        <li>Unmetered Bandwidth</li>
-                        <li>One Click Installs Scripts</li>
-                    </ul>
-                    <a href="#" class="learn-more">
-                        <div class="circle">
-                            <span class="icon arrow"></span>
                         </div>
-                        <p class="button-text">Get Started Now</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 margin_box">
-                <div class="hosting_plan_box active">
-                    <div class="hosting_plan_name">VPS Hosting</div>
-                    <div class="hosting_plan_box_price">$79<span>/Mo</span> </div>
-                    <div class="discount_tag">Save Up to 30% <br><span>Annual Billing</span> </div>
-                    <ul class="hosting_plan_listing">
-                        <li>Unlimited Disk Space</li>
-                        <li>99.9% Uptime Guarantee</li>
-                        <li>Unmetered Bandwidth</li>
-                        <li>One Click Installs Scripts</li>
-                    </ul>
-                    <a href="#" class="learn-more">
-                        <div class="circle">
-                            <span class="icon arrow"></span>
-                        </div>
-                        <p class="button-text">Get Started Now</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4">
-                <div class="hosting_plan_box">
-                    <div class="hosting_plan_name">Dedicated Server</div>
-                    <div class="hosting_plan_box_price">$99<span>/Mo</span> </div>
-                    <div class="discount_tag">Save Up to 30% <br><span>Annual Billing</span> </div>
-                    <ul class="hosting_plan_listing">
-                        <li>Unlimited Disk Space</li>
-                        <li>99.9% Uptime Guarantee</li>
-                        <li>Unmetered Bandwidth</li>
-                        <li>One Click Installs Scripts</li>
-                    </ul>
-                    <a href="#" class="learn-more">
-                        <div class="circle">
-                            <span class="icon arrow"></span>
-                        </div>
-                        <p class="button-text">Get Started Now</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--Ends Here-->
-<!--Testimonial Section-->
-<section class="padding_top_60 padding_bottom_60 text-center float-left w-100" data-scroll-index="3">
-    <div class="container">
-        <h2 class="margin_bottom_20 font_size_36 line_height_48 color_222">Happy Clients</h2>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-xl-10 col-lg-10 margin_top_50">
-                <div id="testimonial_slider" class="carousel slide" data-ride="carousel">
-
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators testimonial_indicators">
-                        <li data-target="#testimonial_slider" data-slide-to="0"><figure><img src="assets/images/testimonial_img01.png" alt=""></figure></li>
-                        <li data-target="#testimonial_slider" data-slide-to="1"><figure><img src="assets/images/testimonial_img02.png" alt=""></figure></li>
-                        <li data-target="#testimonial_slider" data-slide-to="2" class="active"><figure><img src="assets/images/testimonial_img05.png" alt=""></figure></li>
-                        <li data-target="#testimonial_slider" data-slide-to="3"><figure><img src="assets/images/testimonial_img04.png" alt=""></figure></li>
-                        <li data-target="#testimonial_slider" data-slide-to="4"><figure><img src="assets/images/testimonial_img03.png" alt=""></figure></li>
-                    </ul>
-
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item testimonial_box_content">
-                            <figure class="margin_bottom_15"><img src="assets/images/testimonial_quotes.png" alt=""></figure>
-                            <div class="client_name margin_bottom_20">John Robert</div>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                        </div>
-                        <div class="carousel-item testimonial_box_content">
-                            <figure class="margin_bottom_15"><img src="assets/images/testimonial_quotes.png" alt=""></figure>
-                            <div class="client_name margin_bottom_20">John Robert</div>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                        </div>
-                        <div class="carousel-item active testimonial_box_content">
-                            <figure class="margin_bottom_15"><img src="assets/images/testimonial_quotes.png" alt=""></figure>
-                            <div class="client_name margin_bottom_20">John Robert</div>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                        </div>
-                        <div class="carousel-item testimonial_box_content">
-                            <figure class="margin_bottom_15"><img src="assets/images/testimonial_quotes.png" alt=""></figure>
-                            <div class="client_name margin_bottom_20">John Robert</div>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                        </div>
-                        <div class="carousel-item testimonial_box_content">
-                            <figure class="margin_bottom_15"><img src="assets/images/testimonial_quotes.png" alt=""></figure>
-                            <div class="client_name margin_bottom_20">John Robert</div>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 banner_slider_content_box">
+                                <div class="server_tag">VPS Server</div>
+                                <h1>Enterprise-grade VPS
+                                    hosting from Hostiko!</h1>
+                                <ul class="home_banner_list">
+                                    <li>Up to 100 Mbps contended connectivity</li>
+                                    <li>Hosting in Tier 2 datacentres</li>
+                                    <li>Virtual server back-up options</li>
+                                </ul>
+                                <a href="vps_hosting.html" class="btn_banner">Get Started Now</a>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col-xl-4 col-lg-4 col-md-5 banner_slider_img_box">
+                                <figure><img src="assets/images/banner_img.png" alt="" class="img-fluid"></figure>
+                                <div class="price_tag">
+                                    <div class="inner_price_tag">
+                                        <div><small>Only</small>
+                                            <br>$5.99 <br> <small>/mo</small></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#testimonial_slider" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+                <a class="carousel-control-prev banner_slider_left_arrow" href="#banner_slider" data-slide="prev">
                 </a>
-                <a class="carousel-control-next" href="#testimonial_slider" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                <a class="carousel-control-next banner_slider_right_arrow" href="#banner_slider" data-slide="next">
                 </a>
             </div>
-            <div class="col"></div>
+            <div class="scroll_down_box" data-scroll-nav="1">
+                <figure><img src="assets/images/scroll_down_btn.png" alt="" class="img-fluid"></figure>
+            </div>
         </div>
-    </div>
-</section>
-<!--Ends Here-->
-
-<section class="padding_bottom_60 padding_top_60 text-center float-left w-100" data-scroll-index="4">
-    <!--Container-->
-    <div class="container">
-        <!--Section Heading-->
-        <h2 class="margin_bottom_20 font_size_36 line_height_48 color_222">Contact Form</h2>
-        <p class="margin_bottom_50">Neque porro quisquam est, qui dolorem ipsum quia dolor consectetur.</p>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-xl-10 col-lg-10">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6">
-                        <input type="text" class="contact_fields w-100 margin_bottom_25" id="fname" name="fname" placeholder="First Name" required>
-                        <input type="email" class="contact_fields w-100 margin_bottom_25" id="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <input type="text" class="contact_fields w-100 margin_bottom_25" id="lname" name="lname" placeholder="Last Name" required>
-                        <input type="number" class="contact_fields w-100 margin_bottom_25" id="phone" name="phone" placeholder="Phone Number" required>
+    </section>
+    <!--End Slider Section-->
+    <!--Hostiko Feature Section-->
+    <section class="padding_top_100 padding_bottom_100 bg_eef6fe text-center" data-scroll-index="2">
+        <div class="container">
+            <div class="section_heading margin_bottom_70">
+                <h2 class="color_2f395d">Hostiko Features</h2>
+            </div>
+            <div class="row margin_bottom_30">
+                <div class="col-xl-6 col-lg-6 col-md-6 mobile_margin_box">
+                    <div class="hosting_feature_box">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <figure><img src="assets/images/svg/feature_img01.svg" alt=""></figure>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-9">
+                                <h3>Free Setup & Domain Name</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.eneancum</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <textarea name="" id="" cols="30" rows="10" class="contact_fields w-100 margin_bottom_50" placeholder="Your Message"></textarea>
-                <a href="#" class="learn-more">
-                    <div class="circle">
-                        <span class="icon arrow"></span>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="hosting_feature_box">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <figure><img src="assets/images/svg/feature_img02.svg" alt=""></figure>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-9">
+                                <h3>Enjoy Rocket Fast Servers</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.eneancum</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="button-text">Send Message</p>
-                </a>
+                </div>
             </div>
-            <div class="col"></div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 mobile_margin_box">
+                    <div class="hosting_feature_box">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <figure><img src="assets/images/svg/feature_img03.svg" alt=""></figure>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-9">
+                                <h3>100% Uptime Guarantee</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.eneancum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="hosting_feature_box">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <figure><img src="assets/images/svg/feature_img04.svg" alt=""></figure>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-9">
+                                <h3>30 Day Money Back Guarantee</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.eneancum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-<section class="text-center padding_top_35 padding_bottom_60 float-left w-100" >
-    <div class="container">
-        <p class="margin_bottom_50 font_weight_500 font_size_18">Over 1,000 Companies Love Hostiko</p>
-        <figure class="partner_img"><img src="assets/images/partner_img.png" alt="" class="img-fluid"></figure>
-    </div>
-</section>
-<!--Footer Section-->
-<section class="padding_top_60 padding_bottom_60 float-left w-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 full_width text-center">
-                <figure class="footer_logo m-auto "><img src="assets/images/logo.svg" alt=""></figure>
-                <div class="font_size_12 line_height_18 color_5a5f69 sailec_regular margin_bottom_10 padding_top_20">Copyright 2019 DesigningMedia.
-                    All Rights reserved</div>
-                <div class="designed_by font_size_12 line_height_18 color_5a5f69 sailec_regular margin_bottom_20">Designed by:<a href="#" class="color_5a5f69">Designingmedia</a></div>
-                <ul class="footer_social_links">
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+    </section>
+    <!--Ends Here-->
+    <!--Hosting Plan Section-->
+    <section class="padding_bottom_100 padding_top_100 plan_section_bg text-center" data-scroll-index="3">
+        <div class="container">
+            <div class="section_heading margin_bottom_70">
+                <h2 class="color_fff">Plan and Pricing</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 tablet_margin_box">
+                    <div class="hosting_plan_box">
+                        <figure><img src="assets/images/svg/price_plan_img01.svg" alt=""></figure>
+                        <h3>Shared Hosting</h3>
+                        <ul class="hosting_plan_list">
+                            <li>Single <b>Domain</b></li>
+                            <li>One Click Installs</li>
+                            <li><b>Unmetered</b> Bandwidth</li>
+                            <li>Free <b>CDN</b> Access</li>
+                            <li><b>Free</b> SSL Certificate</li>
+                        </ul>
+                        <div class="hosting_plan_price">$9.99<small>/mo</small></div>
+                        <a href="shared_hosting.html" class="btn_hosting_plan">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 tablet_margin_box">
+                    <div class="hosting_plan_box">
+                        <figure><img src="assets/images/svg/price_plan_img02.svg" alt=""></figure>
+                        <h3>Reseller Hosting!</h3>
+                        <ul class="hosting_plan_list">
+                            <li>Single <b>Domain</b></li>
+                            <li>One Click Installs</li>
+                            <li><b>Unmetered</b> Bandwidth</li>
+                            <li>Free <b>CDN</b> Access</li>
+                            <li><b>Free</b> SSL Certificate</li>
+                        </ul>
+                        <div class="hosting_plan_price">$11.45<small>/mo</small></div>
+                        <a href="reseller_hosting.html" class="btn_hosting_plan">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 mobile_margin_box">
+                    <div class="hosting_plan_box">
+                        <figure><img src="assets/images/svg/price_plan_img03.svg" alt=""></figure>
+                        <h3>VPS Server</h3>
+                        <ul class="hosting_plan_list">
+                            <li>Single <b>Domain</b></li>
+                            <li>One Click Installs</li>
+                            <li><b>Unmetered</b> Bandwidth</li>
+                            <li>Free <b>CDN</b> Access</li>
+                            <li><b>Free</b> SSL Certificate</li>
+                        </ul>
+                        <div class="hosting_plan_price">$19.37<small>/mo</small></div>
+                        <a href="#" class="btn_hosting_plan">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="hosting_plan_box">
+                        <figure><img src="assets/images/svg/price_plan_img04.svg" alt=""></figure>
+                        <h3>Dedicated Server</h3>
+                        <ul class="hosting_plan_list">
+                            <li>Single <b>Domain</b></li>
+                            <li>One Click Installs</li>
+                            <li><b>Unmetered</b> Bandwidth</li>
+                            <li>Free <b>CDN</b> Access</li>
+                            <li><b>Free</b> SSL Certificate</li>
+                        </ul>
+                        <div class="hosting_plan_price">$29.99<small>/mo</small></div>
+                        <a href="dedicated_hosting.html" class="btn_hosting_plan">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Ends Here-->
+    <!--Testimonial Section-->
+    <section class="padding_top_100 padding_bottom_100 bg_eef6fe text-center" data-scroll-index="4">
+        <div class="container">
+            <div class="section_heading margin_bottom_70">
+                <h2 class="color_2f395d">See What Others Are Saying</h2>
+            </div>
+            <div id="testimonial_slider" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators testimonial_slider_indicator">
+                    <li data-target="#testimonial_slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#testimonial_slider" data-slide-to="1"></li>
+                    <li data-target="#testimonial_slider" data-slide-to="2"></li>
                 </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="testimonial_box">
+                                    <figure><img src="assets/images/testimonial_img01.png" alt=""></figure>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                    <div class="client_name">Jhone Doe</div>
+                                    <div>CTO</div>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="testimonial_box">
+                                    <figure><img src="assets/images/testimonial_img02.png" alt=""></figure>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                    <div class="client_name">Jhone Smith</div>
+                                    <div>CTO</div>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="testimonial_box">
+                                    <figure><img src="assets/images/testimonial_img01.png" alt=""></figure>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                    <div class="client_name">Jhone Doe</div>
+                                    <div>CTO</div>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev testimonial_slider_left_arrow" href="#testimonial_slider" data-slide="prev">
+                </a>
+                <a class="carousel-control-next testimonial_slider_right_arrow" href="#testimonial_slider" data-slide="next">
+                </a>
+
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!--Ends Here-->
+    <section class="padding_top_100 padding_bottom_100 contact_form_section" data-scroll-index="5">
+        <div class="container">
+            <div class="section_heading margin_bottom_70 text-center">
+                <h2 class="color_fff">Contact To Hostiko</h2>
+            </div>
+            <form action="" id="contactpage">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-6">
+                        <input type="text" class="contact_form_fields name" id="name" name="name" placeholder="Name">
+                        <input type="email" class="contact_form_fields email" id="email" name="name" placeholder="Email">
+                        <input type="tel" class="contact_form_fields tel" id="tel" name="tel" placeholder="Phone">
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-6">
+                        <textarea class="contact_form_fields comment_box" name="comments" id="comments" cols="30" rows="11" placeholder="Message"></textarea>
+                        <input class="btn_submit_message" type="submit" name="submit" id="submit" value="Send Message">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--Footer Section-->
+    <section class="padding_top_75 padding_bottom_75 bg_f4f7fb">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 full_width text-center">
+                    <figure class="one_page_footer_logo m-auto"><img src="assets/images/svg/logo.svg" alt=""></figure>
+                    <div class="font_size_14 line_height_18 color_6115d0 margin_bottom_10 padding_top_20">Copyright 2019 DesigningMedia.
+                        All Rights reserved</div>
+                    <div class="designed_by font_size_14 line_height_18 color_6115d0 margin_bottom_20">Designed by: <a href="#" class="color_000">Designingmedia</a></div>
+                    <ul class="one_page_footer_social_links">
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="javascript:" id="return-to-top" title="return to top"><i class="fa fa-arrow-up"></i></a>
+</div>
 <!--Ends Here-->
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/lazysizes.min.js"></script>
 <script src="assets/js/scrollIt.min.js"></script>
+<script src="assets/js/jquery.validate.js"></script>
+<script src="assets/js/hostiko_contact_form.js"></script>
 <script>
-    $(function(){
-        $.scrollIt({topOffset: -80});
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('.wrapper').addClass('loaded');
+        }, 100);
+        AOS.init();
+    });
+    // Side Nav
+    function openNav() {
+        document.getElementById("mySidenav").style.right = "0";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-250px";
+    }
+    // Search Bar
+    function openSearch() {
+        document.getElementById("myOverlay").style.display = "block";
+    }
 
+    function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    jQuery('.box_counter').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 6000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 350) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
     });
 </script>
-
+<script>
+    new WOW().init();
+    $(function(){
+        $.scrollIt({topOffset: -70});
+    });
+</script>
 </body>
 </html>

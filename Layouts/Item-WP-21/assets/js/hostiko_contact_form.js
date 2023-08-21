@@ -24,7 +24,7 @@ jQuery(document).ready(function () {
 				});
 				submitSignupFormNow = function (e) {
 					var t = e.serialize();
-					var n = "contact-form.php";
+					var n = "hostiko_contact_form.php";
 					jQuery.ajax({
 						url : n,
 						type : "POST",

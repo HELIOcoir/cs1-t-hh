@@ -1,10 +1,10 @@
 <?php
 $name= $_POST['name'];
 $email= $_POST['email'];
-$subject= $_POST['subject'];
+$phone= $_POST['tel'];
 $comments=$_POST['comments'];
 
-if(isset($name) && isset($email) && isset($subject))
+if(isset($name)  && isset($email) && isset($phone))
 {
 	global $to_email,$vpb_message_body,$headers;
 	$to_email="info@info.com";
@@ -12,10 +12,11 @@ if(isset($name) && isset($email) && isset($subject))
 	$vpb_message_body = nl2br("Dear Admin,\n
 	The user whose detail is shown below has sent this message from ".$_SERVER['HTTP_HOST']." dated ".date('d-m-Y').".\n
 	
-	Full Name: ".$name."\n
+	name: ".$name."\n
+	Phone: ".$phone."\n
 	Email Address: ".$email."\n
-	Subject: ".$subject."\n
 	Message: ".$comments."\n
+	User Ip:".getHostByName(getHostName())."\n
 	Thank You!\n\n");
 	
 	//Set up the email headers

@@ -1,18 +1,18 @@
 <?php
-$name= $_POST['name'];
+$category= $_POST['category'];
 $email= $_POST['email'];
 $phone= $_POST['tel'];
 $comments=$_POST['comments'];
 
-if(isset($name)  && isset($email) && isset($phone))
+if(isset($category)  && isset($email) && isset($phone))
 {
 	global $to_email,$vpb_message_body,$headers;
-	$to_email="info@info.com";
+	$to_email="qadri@akdesigner.com";
 	$email_subject="Inquiry From Contact Page";
 	$vpb_message_body = nl2br("Dear Admin,\n
 	The user whose detail is shown below has sent this message from ".$_SERVER['HTTP_HOST']." dated ".date('d-m-Y').".\n
 	
-	name: ".$name."\n
+	Category: ".$category."\n
 	Phone: ".$phone."\n
 	Email Address: ".$email."\n
 	Message: ".$comments."\n
@@ -20,9 +20,9 @@ if(isset($name)  && isset($email) && isset($phone))
 	Thank You!\n\n");
 	
 	//Set up the email headers
-    $headers      = "From: $name <$email>\r\n";
+    $headers      = "From: <$email>\r\n";
     $headers   .= "Content-type: text/html; charset=iso-8859-1\r\n";
-    $headers   .= "Message-ID: <".time().rand(1,1000)."@".$_SERVER['SERVER_NAME'].">". "\r\n"; 
+    $headers   .= "Message-ID: <".time().rand(1,1000)."@".$_SERVER['SERVER_NAME'].">". "\r\n";
 	 if(@mail($to_email, $email_subject, $vpb_message_body, $headers))
 		{
 			  $status='Success';

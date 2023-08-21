@@ -31,7 +31,7 @@
 .pagination .page-item:not(.disabled):hover > .page-link,
 .pagination .page-item:not(.disabled) > .page-link,
 #blog .post-item.border .post-item-wrap .post-item-description a{
-    color: #565656;
+    color: #e94d3a;
 }
 .single-post01 .post-navigation,
 .single-post01 .comments .comment,
@@ -42,7 +42,7 @@
     border: 1px solid #c4c4c4;
 }
 .single-post01 .post-tags a:hover {
-    border: 1px solid #2250fc;
+    border: 1px solid #051646;
 }
 .single-post01 .comments,.single-post01 .post-navigation {
     border-top: 1px solid #eee;
@@ -79,7 +79,7 @@
 #blog .post-item .post-item-description > h2 > a:hover,
 .load-more a:hover,
 #blog .post-item.border .post-item-wrap .post-item-description a:hover{
-    color: #2250fc;
+    color: #051646;
 }
 .form-group label:not(.error),
 #blog .post-item .post-item-description > h2,
@@ -105,7 +105,7 @@
 }
 .sidebar .nav-tabs .nav-link.active {
     background-color: transparent;
-    border-bottom: 2px solid #2250fc;
+    border-bottom: 2px solid #051646;
 }
 .sidebar .post-thumbnail-entry,
 .sidebar .widget-categories ul li{
@@ -129,8 +129,8 @@
 .sidebar .tags a:hover,
 .form-gray-fields .btn,
 .widget-newsletter .btn{
-    border-color: #2250fc;
-    background-color: #2250fc;
+    border-color: #051646;
+    background-color: #051646;
 }
 .single-post01 .form-gray-fields .form-control:focus{
     border-color: #66afe9;
@@ -139,7 +139,7 @@
 }
 .post-item.border .post-meta-category,
 .load-more a{
-    background-color: #2250fc;
+    background-color: #051646;
 }
 #loader,#loader:before,
 #loader:after{
@@ -175,7 +175,7 @@
     border-color: #ececec;
 }
 .load-more a:hover{
-    box-shadow:0 0 0 2px #2250fc;
+    box-shadow:0 0 0 2px #051646;
 }
 
 

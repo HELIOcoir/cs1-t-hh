@@ -17,104 +17,113 @@
     <!--style-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-
     <link rel="shortcut icon" href="assets/images/favicon.png">
 </head>
 <body>
 <div id="default_header"></div>
 <!--Hero Banner Section-->
-<section class="bg_6115d0 sub_banner_page padding_top_60 padding_bottom_60">
+<section class="bg_sub_banner padding_bottom_100 text-center">
     <div class="container">
-        <div class="row">
-            <div class="col-xl-6 col-lg-6">
-                <h1>Contact Us</h1>
-                <p>Hostiko is a Global Provider of Web Hosting and Related Services.</p>
-            </div>
-        </div>
+        <h1 class="margin_bottom_20">Contact Us</h1>
+        <p>Need assistance or just want to get in touch with us?</p>
     </div>
 </section>
 <!--End Slider Section-->
-<!--Contact Form-->
-<section class="padding_top_60 padding_bottom_60">
+<!--Contact Section-->
+<section class="padding_top_95 padding_bottom_95 bg_e0edf1 text-center">
     <div class="container">
-        <div class="section_heading_box margin_bottom_80 padding_left_40">
-            <h2>mailing Address</h2>
-        </div>
         <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-4">
-                <div class="mailing_address_box">
-                    <h4>Address</h4>
-                    <p>121 King Street, <br>
-                        Melbourne Victoria 3000 <br>
-                        Australia.</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4">
-                <div class="mailing_address_box">
-                    <h4>Phone</h4>
-                    <ul class="">
-                        <li>Phone:<a href="tel:(123) 123-456789">(123) 123-456789</a></li>
-                        <li>Help:<a href="tel:(123) 123-456789">(123) 123-456789</a></li>
-                        <li>Intl.<a href="tel:(123) 123-456789">(123) 123-456789</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4">
-                <div class="mailing_address_box">
-                    <h4>Email</h4>
-                    <ul class="">
-                        <li><a href="mailto:support@hostikocom">support@hostikocom</a></li>
-                        <li><a href="mailto:info@hostiko.com">info@hostiko.com</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--End Here-->
-<!--Contact Form Section-->
-<section class="padding_top_60 padding_bottom_60 bg_dbf3fa">
-    <div class="container">
-        <div class="section_heading_box margin_bottom_80 padding_left_40">
-            <h2>Contact Form</h2>
-        </div>
-        <form action="" id="contactpage">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                    <div class="contact_input_field">
-                        <input type="text" placeholder="First Name" name="name" id="name" class="contact_field" required>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                    <div class="contact_input_filed">
-                        <input type="text" placeholder="Last Name" name="last_name" id="last_name" class="contact_field">
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                    <div class="contact_input_filed">
-                        <input type="email" placeholder="Email Address" name="email" id="email" class="contact_field" required>
-                    </div>
-                </div>
-                <div class="col-xl-12 col-lg-12 margin_top_30">
-                    <textarea name="comments" id="comments" class="contact_field w-100" cols="30" rows="10" placeholder="Your Message..."></textarea>
-                    <button type="submit" class="submit_btn" id="submit" name="submit">Send Message</button>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <form action="" id="contactpage">
+                    <input type="text" name="name" class="contact_field w-100" placeholder="Your Name:" required>
+                    <input type="email" name="email" class="contact_field w-100" placeholder="Your Email:" required>
+                    <input type="text" name="subject" class="contact_field w-100" placeholder="Subject:">
+                    <textarea name="comments" class="contact_field w-100" cols="30" rows="6" placeholder="Add Comments:"></textarea>
+                    <input type="submit" id="submit" value="Send Message" class="btn_submit_msg w-100 mobile_margin">
                     <div id="form_result"></div>
+                </form>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="contact_info_box margin_bottom_20 mobile_margin">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3">
+                            <figure><img src="assets/images/contact_info_img01.png" alt="" class="img-fluid"></figure>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 why_choose_content_box text-left contact_info_box_content">
+                            <h6>Live Chat</h6>
+                            <p>Our expert representatives are available to assist you 24/7/365. No issue is too big or too small!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact_info_box margin_bottom_20 mobile_margin">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3">
+                            <figure><img src="assets/images/contact_info_img02.png" alt="" class="img-fluid"></figure>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 why_choose_content_box text-left contact_info_box_content">
+                            <h6>Technical Support</h6>
+                            <p>Experts always happy to help. <br>
+                                First reply within 15 minutes. <br>
+                                <a href="mailto:sales@hostiko.com">sales@hostiko.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact_info_box">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3">
+                            <figure><img src="assets/images/contact_info_img03.png" alt="" class="img-fluid"></figure>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 why_choose_content_box text-left contact_info_box_content">
+                            <h6>Phone Calls</h6>
+                            <p>Get any of your question answered. <br>
+                                9am – 9pm | NY, USA. <br>
+                                <a href="tel:+1-234-567-8901">+1-234-567-8901</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
 </section>
 <!--Ends Here-->
-<div class="padding_top_40 padding_bottom_40">
+<!--Maps Section-->
+<div class="padding_top_95 padding_bottom_95">
     <div class="container">
-        <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-6 margin_box"><figure><img src="assets/images/partner_img01.png" alt="" class="img-fluid"></figure></div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-6 margin_box"><figure><img src="assets/images/partner_img02.png" alt="" class="img-fluid"></figure></div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-6"><figure><img src="assets/images/partner_img03.png" alt="" class="img-fluid"></figure></div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-6"><figure><img src="assets/images/partner_img04.png" alt="" class="img-fluid"></figure></div>
+        <div class="map_box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373531590414!3d-37.817323442021134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2s!4v1563516018787!5m2!1sen!2s" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 </div>
+<!--Ends Here-->
+<!--Partner Section-->
+<section class="padding_top_50 padding_bottom_50 domain_partner_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-2 partner_img_box col-4">
+                <figure><img src="assets/images/partner_img01.png" alt="" class="img-fluid"></figure>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2 partner_img_box col-4">
+                <figure><img src="assets/images/partner_img02.png" alt="" class="img-fluid"></figure>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2 partner_img_box col-4">
+                <figure><img src="assets/images/partner_img03.png" alt="" class="img-fluid"></figure>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2 partner_img_box col-4">
+                <figure><img src="assets/images/partner_img04.png" alt="" class="img-fluid"></figure>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2 partner_img_box col-4">
+                <figure><img src="assets/images/partner_img05.png" alt="" class="img-fluid"></figure>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2 partner_img_box col-4">
+                <figure><img src="assets/images/partner_img06.png" alt="" class="img-fluid"></figure>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Ends Here-->
 <div id="default_footer"></div>
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
@@ -125,24 +134,6 @@
         $("#default_header").load("include/default_header.html");
         $("#default_footer").load("include/default_footer.html");
     });
-    // Side Nav
-    function openNav() {
-        document.getElementById("mySidenav").style.right = "0";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.right = "-250px";
-    }
-
-
-    // Search Bar
-    function openSearch() {
-        document.getElementById("myOverlay").style.display = "block";
-    }
-
-    function closeSearch() {
-        document.getElementById("myOverlay").style.display = "none";
-    }
 </script>
 </body>
 </html>

@@ -5,7 +5,7 @@ body {
 }
 a {
 	outline:none;
-	color:#dddddd;
+	color:#dddddd ;
 	text-decoration:none;
 }
 body, select, input, textarea{
@@ -35,6 +35,7 @@ body, select, input, textarea{
 #blog img,#blog audio,#blog iframe{
 	width: 100%;
 }
+.post-meta-category a{color: #ddd !important;}
 .single-post01 .post-image img {
 	height: auto;
 }
@@ -70,10 +71,15 @@ body, select, input, textarea{
 #blog .post-item .post-item-description > h2,
 #blog .post-item .post-item-description > h2 > a,
 .breadcrumb ol li a, .breadcrumb ul li a,
-.sidebar .widget-categories ul li a, .post-meta-category a{
+.sidebar .widget-categories ul li a{
 	text-decoration: none; color: #ddd;
 }
-a.item-link{margin-top: 20px; display: inline-block}
+a.item-link {
+	margin-top: 20px;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 500;
+}
 .single-post01 .post-item-description .post-meta-date,
 .single-post01 .post-item-description .post-meta-date a,
 .single-post01 .post-item-description .post-meta-category,
@@ -502,14 +508,13 @@ a.item-link{margin-top: 20px; display: inline-block}
 	margin-bottom: 10px;
 	letter-spacing: .5px;
 	background-color: transparent;
-	padding: 10px 0;
 }
 .breadcrumb ol, .breadcrumb ul{
 	margin:0;
 	padding: 0;
 }
 .breadcrumb ol li, .breadcrumb ul li {
-	opacity: .8;
+	opacity: 0.9;
 	display: inline;
 }
 .breadcrumb ol li + li::before,
@@ -517,6 +522,7 @@ a.item-link{margin-top: 20px; display: inline-block}
 	margin: 0 5px;
 	content: ">";
 	background-color: transparent;
+	color: #e94d3a;
 }
 .breadcrumb ol li.active,
 .breadcrumb ol li:hover,
@@ -525,6 +531,7 @@ a.item-link{margin-top: 20px; display: inline-block}
 .breadcrumb ul li:hover,
 .breadcrumb ul li:last-child {
 	opacity: 1;
+
 }
 #blog .post-item.border > .post-item-wrap > .post-item-description {
 	padding: 24px;

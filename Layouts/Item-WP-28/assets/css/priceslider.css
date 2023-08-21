@@ -10,14 +10,16 @@
 	height: 1.2em;
 	cursor: default;
 }
-.ui-slider .ui-slider-range {
-	position: absolute;
-	z-index: 1;
-	font-size: .7em;
-	display: block;
-	border: 0;
-	background-position: 0 0;
-}
+/*.ui-slider .ui-slider-range {*/
+	/*position: absolute;*/
+	/*z-index: 1;*/
+	/*display: block;*/
+	/*border: 0;*/
+	/*width: 100%;*/
+	/*height: 30px;*/
+	/*background-color: #0069ff;*/
+	/*border-radius: 32px;*/
+/*}*/
 .ui-slider-horizontal {
 	height: .8em;
 }
@@ -78,58 +80,48 @@
 .sliderbox {
 	display:inline-block;
 	width: 100%;
-	padding: 15px 0;
+	padding: 0;
 	margin:0;
-	border-radius: 6px; position: relative;
+	border-radius: 6px; position: relative; padding: 0 80px;
 }
-.sliderbox:before{position: absolute; content: ""; background: url("../images/slider_circle.png"); width: 20px; height: 20px; top: 20px; left: -20px}
-.sliderbox:after{position: absolute; content: ""; background: url("../images/slider_circle.png"); width: 20px; height: 20px; top: 20px; right: -20px}
 .slider-container #slider {
 	width: 100%;
-	height: 15px;
+	height: 10px;
 	padding: 0;
 	border: 0;
 	margin: 0 auto;
-	background:url("../images/slider_bar.png") no-repeat;
+	background-color: transparent; background-image: linear-gradient(to right, #099dfe , #002694);
 	top: 15px;
+	border-radius: 32px;
 }
-.slider_price_box{margin-top: 10px}
-/*.slider-container #slider .ui-slider-range {*/
-	/*height: 24px;*/
-	/*background: url("../images/slider_active.png");*/
-/*}*/
+.slider_price_box{text-align: center}
+.slider_price_box .price_txt strike{font-size: 16px; line-height: 24px; color: #2f395d; font-weight: 700}
+.slider_price_box .price_txt{font-size: 20px; font-weight: 400; line-height: 36px; color: #0069ff; margin-bottom: 10px}
+.slider_price_box .price_txt span#price_val{font-size: 36px; font-weight: 500; line-height: 36px}
 .slider-container #slider .ui-slider-handle {
 	outline: none;
 	background: url(../images/slider_handle.png) no-repeat left top;
 	border-radius: 0;
 	border: 0;
-	width: 20px;
-	height: 20px;
-	margin: -5px 0 0 0;
+	width: 30px;
+	height: 30px;
+	margin: -6px 0 0 -20px;
 }
 .slider-container #slider .ui-slider-handle:hover {
 	cursor: pointer;
 }
 .price_rangetxt {
 	width: 100%;
-	padding: 20px 50px;
-	float: left;
-	background: #1633ff; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #1633ff 0%, #ff007e 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #1633ff 0%, #ff007e 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #1633ff 0%, #ff007e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	padding: 0 100px;
 }
 .price_rangetxt div.icon {
-	width: 98px;
 	font-size: 16px;
-	line-height: 23px;
+	line-height: 18px;
 	cursor: pointer;
 	font-weight: 400;
 	float: left;
-	height: 98px;
-	background-color: #fff;
-	border-radius: 100%;
 	display: table;
+
 }
 .heading{
 	width: 23%;
@@ -142,16 +134,20 @@
 }
 .price_rangetxt div.icon span{
 	text-transform: uppercase;
-	color: #5a5f69;
-	font-size: 16px;
-	line-height: 18px;
-	font-family: 'Roboto', sans-serif;
-	display: table-cell;
+	color: #0c5adb;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 500;
+	display: block;
 	vertical-align: middle;
 	text-align: center;
+	margin-bottom: 15px;
 }
-.price_rangetxt div.current{background-color: transparent; border: 2px solid #fff}
+.price_rangetxt div.icon .vps_slider_img{background: url("../images/vps_slider_img01.png") no-repeat; width: 90px; height: 98px}
+.price_rangetxt div.icon{background-color: #fff; border-radius: 10px; padding: 25px}
+.price_rangetxt div.current{background-color: transparent; background-image: linear-gradient(#002694, #0892f4);}
 .price_rangetxt div.current span{color: #fff}
+.price_rangetxt div.current .vps_slider_img{background: url("../images/vps_slider_active_img.png") no-repeat; width: 90px; height: 98px}
 .price_content {
 	width:100%;
 	text-align:center;
@@ -166,16 +162,15 @@
 .price_content .smallbox:last-child{
 	border: none;
 }
-.price_content .image_holder {
-position: relative;
-}
 
-
+.slider-container{width: 100%; margin: 0 auto}
 .value_text {
 	font-size: 16px;
-	line-height: 30px;
-	color:#5a5f69;
+	line-height: 18px;
+	color:#051646;
+	font-weight: 300;
 	text-align: center;
+
 }
 .top_heading{float: left; width: 100%; padding: 0 55px}
 .top_heading .text_value{
@@ -188,25 +183,20 @@ position: relative;
 	font-weight: 500;
 }
 .value_text .value {
-	line-height:30px;
-	color: #222;
-	font-size: 24px;
+	line-height:28px;
+	color: #051646;
+	font-size: 24px; font-weight: 500;
+
 }
 .promotion_area{text-align: left; padding: 45px 15px}
 .coupon_code span{font-size: 24px; line-height: 36px; color: #454545; font-weight: 500}
-.slider_detail{padding: 30px 47px; background-color: #fff}
+.slider_detail{padding: 25px 0 0}
 .price_txt {
-	color:#ff007e;
-	font-size:16px;
-	line-height:24px;
-	min-width: 190px;
+	color:#051646;
+	font-size:24px;
+	line-height:24px; font-weight: 500;
 }
-.price_txt .numeric1 {
-	line-height:24px;
-	font-size:30px;
-	font-weight: 600;
-	color: #ff007e;
-}
+
 
 /*.price-slider-section{*/
 
@@ -223,6 +213,15 @@ position: relative;
 	width: 100%;
 	border-radius: 6px
 }
-.vps_slider_listing li{display: inline-block; padding: 25px 20px 0}
+.vps_slider_listing li{display: inline-block; padding: 25px 45px 0; vertical-align: middle}
 .vps_slider_listing li:first-child{padding-left: 0}
 .vps_slider_listing li:last-child{padding-right: 0}
+.slider_nodes{width: 100%}
+.slider_nodes li{display: inline-block; padding: 0 22px 0}
+.price_rangetxt div.icon.current{position: relative}
+.btn_vps_slider{font-size: 16px; line-height: 18px; font-weight: 500; color: #fff; background-color: #0c5adb; border-radius: 4px; padding: 18px 40px; display: inline-block; border: 2px solid #0c5adb; transition: all ease-in-out 0.5s}
+.btn_vps_slider:hover{background-color: #fff; border: 2px solid #0c5adb; color: #0c5adb}
+
+
+
+

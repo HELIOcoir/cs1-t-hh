@@ -5,9 +5,9 @@
 .content{padding:20px 20px 60px}
 .nav-tabs.nav-stacked{border:none}
 .nav-tabs.nav-stacked > li{margin-bottom:5.75px;margin-left:0;margin-top:2px}
-.nav-tabs.nav-stacked > li > a{-moz-border-bottom-colors:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;background-color:#f3f3f3;border-color:-moz-use-text-color -moz-use-text-color -moz-use-text-color #810e54;border-image:none;border-radius:0;border-style:none none none solid;border-width:0 0 0 5px;margin:0;color:#333;padding:14px 18px;transition:background .3s ease-out 0;-webkit-transition:background .3s ease-out 0;-moz-transition:background .3s ease-out 0;-ms-transition:background .3s ease-out 0}
-.nav-tabs.nav-stacked > li.active > a,.nav-tabs.nav-stacked > li.active > a:hover,.nav-tabs.nav-stacked > li.active > a:focus{-moz-border-bottom-colors:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;background-color:#810e54;border-color:#810e54 #810e54 rgba(0,0,0,0);color:#fff;cursor:default;margin-top:0;outline:medium none;border-width:0 0 0 5px;transition:all .2s ease 0}
-.nav-tabs.nav-stacked > li a:hover{color:#ff9600}
+.nav-tabs.nav-stacked > li > a{-moz-border-bottom-colors:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;background-color:#f3f3f3;border-color:-moz-use-text-color -moz-use-text-color -moz-use-text-color #fcb100;border-image:none;border-radius:0;border-style:none none none solid;border-width:0 0 0 5px;margin:0;color:#333;padding:14px 18px;transition:background .3s ease-out 0;-webkit-transition:background .3s ease-out 0;-moz-transition:background .3s ease-out 0;-ms-transition:background .3s ease-out 0}
+.nav-tabs.nav-stacked > li.active > a,.nav-tabs.nav-stacked > li.active > a:hover,.nav-tabs.nav-stacked > li.active > a:focus{-moz-border-bottom-colors:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;background-color:#fcb100;border-color:#00b2f2 #00b2f2 rgba(0,0,0,0);color:#fff;cursor:default;margin-top:0;outline:medium none;border-width:0 0 0 5px;transition:all .2s ease 0}
+.nav-tabs.nav-stacked > li a:hover{color:#fcb100}
 .the-icons li{list-style:outside none none}
 .tabbable .nav-tabs{border:none}
 .dmbutton2{background:rgba(0,0,0,0) none repeat scroll 0 0;border:1px solid #2b2e31;border-radius:2px;color:#2b2e31;cursor:pointer;display:inline-block;font-size:1.22rem;font-weight:400!important;letter-spacing:.25px;line-height:normal;margin:0 0 1.25rem;padding:.75rem 1.25rem .95rem;text-align:center;text-decoration:none;transition:background-color 300ms ease-out 0;-webkit-transition:background-color 300ms ease-out 0;-ms-transition:background-color 300ms ease-out 0;-moz-transition:background-color 300ms ease-out 0}
@@ -23,7 +23,7 @@
 .carousel.thumbnail .carousel-control.left,.carousel.thumbnail .carousel-control.right{color:#000}
 .carousel.thumbnail .item:first-child{position:relative;top:auto}
 .carousel.thumbnail .item.active{opacity:1;transition:opacity .7s ease-in-out 0;z-index:2}
-blockquote {margin: 20px;border-left: 5px solid #810e54;text-align: left;line-height: 30px;font-size: 14px}
+blockquote {margin: 20px;border-left: 5px solid #fcb100;text-align: left;line-height: 30px;font-size: 14px}
 /* ===================================
     18.2 Progress Bar
 ====================================== */
@@ -61,13 +61,13 @@ blockquote {margin: 20px;border-left: 5px solid #810e54;text-align: left;line-he
 .title{color:#0f1923;margin:20px 0;padding-bottom:20px;position:relative;border-bottom:1px solid #ddd}
 hr.space{margin-bottom:20px;margin-top:20px}
 .heading1{color:#000;line-height:1.1;font-size:48px}
-ul li ul,ul li ol{margin-bottom:0;margin-left:1.25em;list-style:inside}
-blockquote{border-left:5px solid #810e54}
-.blockquote-reverse,blockquote.pull-right{border-right:5px solid #810e54}
-.list-group-item.active,.list-group-item.active:focus,.list-group-item.active:hover{background-color:#810e54;border-color:#810e54}
+ul li ul,ul li ol{margin-bottom:0;margin-left:0;list-style:inside}
+blockquote{border-left:none}
+.blockquote-reverse,blockquote.pull-right{border-right:5px solid #fcb100}
+.list-group-item.active,.list-group-item.active:focus,.list-group-item.active:hover{background-color:#fcb100;border-color:#fcb100}
 .list-group-item.active .list-group-item-text,.list-group-item.active:focus .list-group-item-text,.list-group-item.active:hover .list-group-item-text{color:#0f1923}
 a.list-group-item:focus,a.list-group-item:hover,button.list-group-item:focus,button.list-group-item:hover{background-color:#f3f3f3}
-.nav-pills > li.active > a,.nav-pills > li.active > a:focus,.nav-pills > li.active > a:hover{background-color:#810e54;color:#fff;border-radius:0}
+.nav-pills > li.active > a,.nav-pills > li.active > a:focus,.nav-pills > li.active > a:hover{background-color:#fcb100;color:#fff;border-radius:0}
 .nav > li > a:focus,.nav > li > a:hover{background-color:#f3f3f3}
 .btn-group-lg > .btn,.btn-lg{border-radius:0;font-size:18px;line-height:1.33333;padding:15px 0; margin: 10px 0}
 .margin-bottom-sm{margin:0 0 10px}
@@ -83,9 +83,9 @@ a.list-group-item:focus,a.list-group-item:hover,button.list-group-item:focus,but
 ====================================== */
 .accordion-heading .accordion-toggle{background-color:#fff;border-top:1px solid #f5f5f5;color:#1a1a1a;cursor:pointer;display:block;line-height:28.75px;outline:medium none!important;padding:5px 15px;text-decoration:none;text-transform:uppercase}
 .accordion-heading .accordion-toggle > i{margin-right:10px}
-.accordion-heading .accordion-toggle.active,.accordion-heading .accordion-toggle.active i,.accordion-heading .accordion-toggle:hover{color:#810e54}
+.accordion-heading .accordion-toggle.active,.accordion-heading .accordion-toggle.active i,.accordion-heading .accordion-toggle:hover{color:#fcb100}
 #accordion-panel .panel-title > .small,#accordion-panel .panel-title > .small > a,#accordion-panel .panel-title > a,#accordion-panel .panel-title > small,#accordion-panel .panel-title > small > a{color:#0f1923}
-#accordion-panel2 .panel-success > .panel-heading{background-color:#810e54;border-color:#810e54;color:#fff}
+#accordion-panel2 .panel-success > .panel-heading{background-color:#fcb100;border-color:#fcb100;color:#fff}
 .panel-title > .small,.panel-title > .small > a:hover,.panel-title > a,.panel-title > small,.panel-title > small > a:hover{color:#fff}
 .thumbnail{background-color:#fff;border:1px solid #ddd;border-radius:4px;display:block;line-height:1.42857;margin-bottom:20px;padding:4px;transition:border .2s ease-in-out 0}
 /* ===================================
@@ -109,31 +109,31 @@ a.list-group-item:focus,a.list-group-item:hover,button.list-group-item:focus,but
 .plan1 h3{margin:0 0 15px;color:#333;font-weight:600;text-transform:uppercase}
 .pakage_price{float:left;width:100%;font-size:16px;color:#333}
 .pakage_price span.doller{font-size:20px;position:relative;top:-25px}
-.pakage_price span.numeric{font-size:62px;color:#810e54;line-height:60px}
+.pakage_price span.numeric{font-size:62px;color:#fcb100;line-height:60px}
 .pakage_price span.blue{font-size:24px}
 .plan1 ul{list-style:none;padding:0;margin:15px 0;float:left;width:100%}
 .plan1 ul li{border-bottom:1px solid rgba(0,0,0,0.2);padding:10px 0}
 .plan1 ul li:last-child{border:none}
 .plan1 .btn{border-radius:2px;font-size:16px;line-height:16px;border:none}
-.plan1:hover{background:#810e5419;transform:scaleY(1.09);-webkit-transform:scaleY(1.09);-moz-transform:scaleY(1.09);-ms-transform:scaleY(1.09);border-color:#810e54}
+.plan1:hover{background:#fcb100;transform:scaleY(1.09);-webkit-transform:scaleY(1.09);-moz-transform:scaleY(1.09);-ms-transform:scaleY(1.09);border-color:#fcb100}
 .plan1:hover h3,.plan1:hover .pakage_price,.plan1:hover .pakage_price span.numeric,.plan1:hover ul li,.plan1:hover .pakage_price span.blue{color:#fff}
 .plan1:hover .btn{color:#fff;background-color:#0f1923}
 /* ===================================
     18.10 Table
 ====================================== */
 table {margin: 0 0 1.5em;width: 100%;}
-th {color: #810e54;}
+th {color: #fcb100;}
 td, th {padding: 3px;border: 1px solid #ddd;text-align: center;}
 /* ===================================
     18.11 Definition Lists
 ====================================== */
 dl {margin-top: 0;margin-bottom: 20px;}
-dt {font-weight: bold;color: #810e54;}
+dt {font-weight: bold;color: #fcb100;}
 dd {margin: 0 1.5em 1.5em;}
 
 p{margin:  0 0 10px}
-.btn-primary{background-color: #810e54; border-color: #810e54}
-.btn-primary:hover{background-color: #d7263d; border-color: #d7263d}
+.btn-primary{background-color: #fcb100; border-color: #fcb100}
+.btn-primary:hover{background-color: #00b2f2; border-color: #00b2f2}
 .form-control{margin-bottom: 15px}
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{padding: 8px}
 th:first-child{width: auto}
@@ -141,3 +141,27 @@ tr td:first-child{text-align: center !important;}
 th:first-child{text-align: center !important;}
 .nav-stacked>li>a{padding: 10px 15px}
 .panel{display: block}
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar > a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar > a:hover {
+    background-color: #000;
+}
+
+.icon-bar a.active {
+    background-color: #4CAF50;
+}

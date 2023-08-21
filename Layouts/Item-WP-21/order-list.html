@@ -21,21 +21,26 @@
     <link rel="stylesheet" href="assets/css/typography.css">
 </head>
 <body>
+<div id="default_header"></div>
 <!--Hero Banner Section-->
-<section class="shared_banner">
-    <div id="default_header" class="animate-bottom main_header"></div>
+<section class="bg_6115d0 sub_banner_page padding_top_60 padding_bottom_60">
     <div class="container">
-        <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-7 hero_banner_content padding_top_200">
-                <h1>Order List</h1>
+        <div class="position-relative">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <h1>Order List</h1>
+                </div>
             </div>
-            <div class="col"></div>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Order List</li>
+            </ul>
         </div>
     </div>
 </section>
 <!--End Slider Section-->
 <!--Typography Start Here -->
-<div class="col-xs-12 padding_bottom_75 padding_top_200">
+<div class="col-xs-12 padding_top_100 padding_bottom_100">
     <div class="container">
         <h2>Basic List Group</h2>
         <ul class="list-group">
@@ -77,14 +82,6 @@
     $(function(){
         $("#default_header").load("include/default_header.html");
         $("#default_footer").load("include/default_footer.html");
-    });
-    $(window).on('scroll', function (event) {
-        var scrollValue = $(window).scrollTop();
-        if (scrollValue > 80) {
-            $('.navbar').addClass('affix');
-        } else{
-            $('.navbar').removeClass('affix');
-        }
     });
 </script>
 

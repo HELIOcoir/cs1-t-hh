@@ -4,7 +4,7 @@ var ram_arr = new Array('2 GB','4 GB','8 GB','12 GB','16 GB');
 var hdd_arr  = new Array('10 GB','30 GB','50 GB','60 GB','80 GB');
 var bandwidth_arr = new Array('Unlimited','Unlimited','Unlimited','Unlimited','Unlimited');
 var ip_arr = new Array('3 IPs', '5 IPs','7 IPs','9 IPs','Unlimited')
-var price_arr = 	new Array('$100','$110','$120','$130','$140', '$150');
+var price_arr = 	new Array('$15.99','$19.99','$29.99','$49.99','$69.99');
 var link_arr = 		new Array('$10','$25','$50','$75','$100','$125');
 var b_url = 'https://www.your-domain.com/?cmd=cart&action=add&id=';
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
         range: 'min',
         animate: true,
         min: 1,
-        max: 6,
+        max: 5,
         paddingMin: 70,
         paddingMax: 130,
         change: function( event, ui ) {

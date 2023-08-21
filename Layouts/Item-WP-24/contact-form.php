@@ -1,22 +1,21 @@
 <?php
 $name= $_POST['name'];
+$last_name= $_POST['last_name'];
 $email= $_POST['email'];
-$phone= $_POST['tel'];
 $comments=$_POST['comments'];
 
-if(isset($name)  && isset($email) && isset($phone))
+if(isset($name) && isset($last_name) && isset($email) && isset($comments))
 {
 	global $to_email,$vpb_message_body,$headers;
-	$to_email="info@info.com";
+	$to_email="mughees@akdesigner.com";
 	$email_subject="Inquiry From Contact Page";
 	$vpb_message_body = nl2br("Dear Admin,\n
 	The user whose detail is shown below has sent this message from ".$_SERVER['HTTP_HOST']." dated ".date('d-m-Y').".\n
 	
-	name: ".$name."\n
-	Phone: ".$phone."\n
+	Name: ".$name."\n
+	Last name: ".$last_name."\n
 	Email Address: ".$email."\n
 	Message: ".$comments."\n
-	User Ip:".getHostByName(getHostName())."\n
 	Thank You!\n\n");
 	
 	//Set up the email headers

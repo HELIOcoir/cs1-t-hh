@@ -4,12 +4,12 @@ var ram_arr = new Array('2 GB','4 GB','8 GB','12 GB','16 GB');
 var hdd_arr  = new Array('10 GB','30 GB','50 GB','60 GB','80 GB');
 var bandwidth_arr = new Array('Unlimited','Unlimited','Unlimited','Unlimited','Unlimited');
 var ip_arr = new Array('3 IPs', '5 IPs','7 IPs','9 IPs','Unlimited')
-var price_arr = 	new Array('$150','$286','$300','$350','$400');
+var price_arr = 	new Array('$100','$110','$120','$130','$140', '$150');
 var link_arr = 		new Array('$10','$25','$50','$75','$100','$125');
-var b_url = 'https://akdesigner.com/whmcs-templates/cart.php?a=add&pid=';
+var b_url = 'https://www.your-domain.com/?cmd=cart&action=add&id=';
 
 // This is what you want the default position to be
-var def_pos = 3;
+var def_pos = 2;
 
 $(document).ready(function(){
 
@@ -17,9 +17,9 @@ $(document).ready(function(){
         range: 'min',
         animate: true,
         min: 1,
-        max: 5,
-        paddingMin: 50,
-        paddingMax: 120,
+        max: 6,
+        paddingMin: 70,
+        paddingMax: 130,
         change: function( event, ui ) {
             $('.slider-container #cpu_val span.value').html(cpu_arr[ui.value-1]);
             $('.slider-container #ram_val span.value').html(ram_arr[ui.value-1]);

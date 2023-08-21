@@ -1,3 +1,4 @@
+
 .ui-slider {
 	position: relative;
 	text-align: left;
@@ -12,10 +13,12 @@
 .ui-slider .ui-slider-range {
 	position: absolute;
 	z-index: 1;
-	font-size: .7em;
 	display: block;
 	border: 0;
-	background-position: 0 0;
+	width: 100%;
+	height: 30px;
+	background-color: #0069ff;
+	border-radius: 32px;
 }
 .ui-slider-horizontal {
 	height: .8em;
@@ -53,9 +56,11 @@
 .ui-slider-vertical .ui-slider-range-max {
 	top: 0;
 }
-.slider-container {
-	border-radius: 6px;
-}
+/*.slider-container {*/
+	/*float: left;*/
+	/*width: 100%;*/
+	/*border-radius: 6px;*/
+/*}*/
 .slider-container h3 {
 	margin:0 0 10px;
 	padding:0;
@@ -74,46 +79,49 @@
 }
 .sliderbox {
 	display:inline-block;
-	width: 99%;
+	width: 100%;
+	padding: 0;
 	margin:0;
-	border-radius: 6px;
+	border-radius: 6px; position: relative;
 }
 .slider-container #slider {
-	width: 100%;
-	height: 370px;
+	width: 85%;
+	height: 20px;
 	padding: 0;
 	border: 0;
 	margin: 0 auto;
-	background:url("../images/slider_bar.png") no-repeat;
+	background-color: #d6e1f2;
+	top: 15px;
+	border-radius: 32px;
 }
-.slider-container #slider .ui-slider-range {
-	background-color: #13ceed;
-	width: 22px;
-	left: 0;
-	bottom: 0;
-	border-radius: 10px;
-}
+.slider_price_box{text-align: center}
+.slider_price_box .price_txt strike{font-size: 16px; line-height: 24px; color: #2f395d; font-weight: 700}
+.slider_price_box .price_txt{font-size: 20px; font-weight: 400; line-height: 36px; color: #0069ff; margin-bottom: 10px}
+.slider_price_box .price_txt span#price_val{font-size: 36px; font-weight: 500; line-height: 36px; font-family: 'Fira Sans', sans-serif}
 .slider-container #slider .ui-slider-handle {
 	outline: none;
 	background: url(../images/slider_handle.png) no-repeat left top;
 	border-radius: 0;
 	border: 0;
-	width: 45px;
-	height: 45px;
-	margin: 0 0 -11px -6px;
+	width: 24px;
+	height: 50px;
+	margin: -12px 0 0 -20px;
 }
 .slider-container #slider .ui-slider-handle:hover {
 	cursor: pointer;
 }
 .price_rangetxt {
-	padding: 15px 0;
+	width: 100%;
 }
 .price_rangetxt div.icon {
+	width: 98px;
 	font-size: 16px;
-	line-height: 23px;
+	line-height: 18px;
 	cursor: pointer;
 	font-weight: 400;
-	padding: 20px 0;
+	float: left;
+	display: table;
+
 }
 .heading{
 	width: 23%;
@@ -121,19 +129,22 @@
 	margin-left: 1%;
 	margin-right: 1%;
 	font-size: 20px;
-	font-weight: 700;
+	font-weight: 700
 
 }
 .price_rangetxt div.icon span{
-	display:block;
 	text-transform: uppercase;
-	color: rgba(255,255,255,.20);
-	font-size: 16px;
+	color: #000;
+	font-size: 18px;
 	line-height: 24px;
 	font-weight: 400;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-family: 'Fira Sans', sans-serif;
 }
-
-.price_rangetxt div.current span{color: #fff}
+.price_rangetxt div.current{background-color: transparent;}
+.price_rangetxt div.current span{color: #0d79ed}
 .price_content {
 	width:100%;
 	text-align:center;
@@ -148,20 +159,15 @@
 .price_content .smallbox:last-child{
 	border: none;
 }
-.price_content .image_holder {
-position: relative;
-}
 
-
-.price_content .value_text {
+.slider-container{width: 100%; margin: 0 auto}
+.value_text {
 	font-size: 16px;
-	line-height: 20px;
-	color:#fff;
-	font-weight: 400;
+	line-height: 24px;
+	color:#000;
+	font-weight: 300;
 	text-align: center;
-	padding-top: 20px;
-	position: relative;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 }
 .top_heading{float: left; width: 100%; padding: 0 55px}
 .top_heading .text_value{
@@ -173,59 +179,29 @@ position: relative;
 	font-size: 18px;
 	font-weight: 500;
 }
-.price_content .value {
-	display: block;
-	color:#fff;
-	line-height:20px;
-	font-weight: 400;
-	font-size: 20px;
-	font-family: 'Lato', sans-serif;
+.value_text .value {
+	line-height:28px;
+	color: #000;
+	font-size: 24px;
+	font-weight: 400; font-family: 'Fira Sans', sans-serif;
 }
 .promotion_area{text-align: left; padding: 45px 15px}
 .coupon_code span{font-size: 24px; line-height: 36px; color: #454545; font-weight: 500}
-.slider_detail{padding: 30px 47px; background-color: #fff}
-.price_txt {
-	color:#0d2781;
-	font-size:24px;
-	line-height:24px;
-	font-weight: 500;
-}
-.price_txt .numeric1 {
-	line-height:28px;
-	font-size:38px;
-	font-weight: 400;
-	color: #00b2f2;
-	font-family: 'Lato', sans-serif;
-}
-.cutted_price{font-size: 20px; font-weight: 500; color: #454545; line-height: 36px; text-align: left}
-.vps_btn {
-	color:#fff;
-	display:inline-block;
-	font-size:20px;
-	line-height:20px;
-	background:#029ef5;
-	text-decoration:none;
-	font-weight: 500;
-	padding: 10px 30px;
-	border: 2px solid #029ef5;
-	border-radius: 32px;
-	transition: all ease-in-out 0.4s;
-	vertical-align: middle;
-}
-.package_price strike{font-size: 18px; line-height: 24px; color: #9f1ee5; font-weight: 500}
-.price_box{text-align: center; background-color: #230fae}
-.vps_btn:hover{border: 2px solid #13ceed; background-color: transparent; color: #0d2781}
-.tag{
-	position:absolute;
-	right:0;
-	top:0;
-}
-.price-slider-section{
-	padding: 0;
-	float: left;
-	width: 65%;
-	border-radius: 6px;
-}
+.slider_detail{padding: 60px 0 0}
+/*.price_txt {*/
+	/*color:#0e1f35;*/
+	/*font-size:18px;*/
+	/*line-height:24px;*/
+	/*min-width: 190px;*/
+/*}*/
+
+
+/*.price-slider-section{*/
+
+	/*float: left;*/
+	/*width: 100%;*/
+	/*border-radius: 6px;*/
+/*}*/
 
 .nomargin_rt{
 	margin-right: 0 !important;
@@ -235,11 +211,17 @@ position: relative;
 	width: 100%;
 	border-radius: 6px
 }
-.inner_price_content{
-	background-color: #13ceed;
-	padding: 25px 0;
-	border: 1px solid #13ceed;
-	border-radius: 10px;
-}
-.price_box{padding: 35px 0}
-.outer_slider{padding: 50px 110px 0; background-color: #fff; border: 1px solid #d5d1ef}
+.vps_slider_listing li{display: inline-block; padding: 25px 20px 0; vertical-align: middle}
+.vps_slider_listing li:first-child{padding-left: 0}
+.vps_slider_listing li:last-child{padding-right: 0}
+.slider_nodes{width: 100%}
+.slider_nodes li{display: inline-block; padding: 0 40px 0}
+.buynow_button{font-size: 15px; line-height: 17px; color: #fff; font-weight: 500; border-radius: 32px; display: inline-block; background-color: #0069ff; padding: 13px 35px; transition: all ease-in-out 0.5s; border: 2px solid #0069ff; font-family: 'Fira Sans', sans-serif; box-shadow: 0 0 20px 0 rgba(0,105,255,.30)}
+.buynow_button:hover{background-color: transparent; color: #0069ff; border: 2px solid #0069ff}
+.price_rangetxt div.icon.current{position: relative}
+
+
+
+
+
+

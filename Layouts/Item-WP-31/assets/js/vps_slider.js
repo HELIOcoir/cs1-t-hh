@@ -18,8 +18,8 @@ $(document).ready(function(){
         animate: true,
         min: 1,
         max: 5,
-        paddingMin: 110,
-        paddingMax: 90,
+        paddingMin: 80,
+        paddingMax: 75,
         change: function( event, ui ) {
             $('.slider-container #cpu_val span.value').html(cpu_arr[ui.value-1]);
             $('.slider-container #ram_val span.value').html(ram_arr[ui.value-1]);
@@ -27,7 +27,7 @@ $(document).ready(function(){
             $('.slider-container #bandwidth_val span.value').html(bandwidth_arr[ui.value-1]);
             $('.slider-container #ip_val span.value').html(ip_arr[ui.value-1]);
             $('.slider-container #price_val').html(price_arr[ui.value-1]);
-            $('.slider-container a.buynow-button').attr('href', b_url + link_arr[ui.value-1]);
+            $('.slider-container a.buynow_button').attr('href', b_url + link_arr[ui.value-1]);
             $('.slider-container div.price_rangetxt div#icon-'+(ui.value-1)).addClass("current");
             $('.slider-container #sub-heading-'+(ui.value-1)).addClass("current1");
         }
