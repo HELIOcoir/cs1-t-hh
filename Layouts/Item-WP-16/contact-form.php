@@ -13,8 +13,7 @@ if(isset($name) && isset($email) && isset($phone  ))
 	
 	Fullname: ".$name."\n
 	Email Address: ".$email."\n
-	Phone: ".$phone."\n
-	Message: ".$comments."\n
+  	Message: ".$comments."\n
 	User Ip:".getHostByName(getHostName())."\n
 	Thank You!\n\n");
 	
